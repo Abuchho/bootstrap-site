@@ -1,6 +1,7 @@
+const { json, response } = require('express');
 const express = require ('express')
 const app = express()
-const request = require ('request')
+const got = require ('got')
 
 app.use(express.static('public'))
 app.set('view engine','ejs');
@@ -8,27 +9,21 @@ app.set('view engine','ejs');
 
 
 
-app.get('/', (req, res)=> {
-    res.render('index')
+app.get('/data', (req, res)=> {
+
+    (async () => {
+        try {
+            const response = await got('https://datausa.io/api/data?drilldowns=Nation&measures=Population');
+            console.log(response.body);
+            res.send(response.body)
+        } catch (error) {
+            console.log(error.response.body);
+            
+        }
+    })();
+
+
 });
-
-app.get('/data', function(req, res, next) {
-    request({
-      uri: 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUMT131226000000003',
-      qs: {
-        api_key: '',
-        query: 'Population'
-      }
-    }).pipe(res);
-  });
-
-
-
-
-
-
-
-
 
 
 
