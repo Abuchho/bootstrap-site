@@ -10,5 +10,5 @@
 
 
 // }
-// xhr.open('GET', 'https://datausa.io/api/covid19/employment/latest/');
+// xhr.open('GET', 'https://localhost:3000/facts');
 // xhr.send();
