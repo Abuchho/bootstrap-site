@@ -1,4 +1,4 @@
-let stateFips = {
+let stateNames = {
     "Alabama"                :  "01",
     "Alaska"                 :  "02",
     "Arizona"                :  "04",
@@ -51,3 +51,13 @@ let stateFips = {
     "Wisconsin"              :  "55",
     "Wyoming"                :  "56"
  };
+
+ var main = document.getElementById('stateDropDown');
+ var sub = document.getElementById('countyDropDown');
+
+ main.addEventListener('change', function(event){
+
+    var selectedOption = event.target.value ;
+    console.log(stateNames[selectedOption])
+
+ });
