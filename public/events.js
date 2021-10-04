@@ -54,9 +54,12 @@ let stateNames = {
     "Wyoming"                :  "56"
  };
 
+ window.onload = function() {
+    document.getElementById('submitBtn').addEventListener('click', fetchData)
+  };
 
     //State Population
-let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:*`
+let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:13`
     //County Population
 let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:*&in=state:*'
     //State Poverty
@@ -104,8 +107,8 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
 
   function showOutput(res1, res2) { 
       document.getElementById('results').innerHTML =
-        `<li>${res1[1][1]}</li>`
-        console.log(res2)
+        `<li>${res1[1]}</li>`
+        console.log(res1)
     }
 
 
@@ -122,4 +125,4 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
 
  });
 
- document.getElementById('submitBtn').addEventListener('click', fetchData());
+
