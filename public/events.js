@@ -54,12 +54,22 @@ let stateNames = {
     "Wyoming"                :  "56"
  };
 
- window.onload = function() {
+var main = document.getElementById('stateDropDown');
+var sub = document.getElementById('countyDropDown');
+var selectedOption
+var inputOption
+window.onload = function() {
+    main.addEventListener('change', function(event){
+        selectedOption = event.target.value;
+        inputOption = stateNames[selectedOption];
+        console.log(inputOption)
+    });
+
     document.getElementById('submitBtn').addEventListener('click', fetchData)
-  };
+};
 
     //State Population
-let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:13`
+let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:01`
     //County Population
 let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:*&in=state:*'
     //State Poverty
@@ -113,16 +123,6 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
 
 
 
- var main = document.getElementById('stateDropDown');
- var sub = document.getElementById('countyDropDown');
 
- var selectedOption
-
- main.addEventListener('change', function(event){
-
-    selectedOption = event.target.value;
-    console.log(stateNames[selectedOption])
-
- });
 
 
