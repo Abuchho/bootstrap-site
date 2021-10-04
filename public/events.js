@@ -86,11 +86,12 @@ var getCountyUnemployment = axios.get(countyUnemp);
 
 async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
     .then(function (response) {
-        const results = response[0].data
-        showOutput(results)
-        console.log(results)
-    });
-}
+        const resultsStatePop = response[0].data;
+        const resultsCountyPop = response[1].data
+        showOutput(resultsStatePop, resultsCountyPop)
+    })
+};
+
 
 
 
@@ -101,11 +102,11 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
 
   // Function to show the output
 
-  function showOutput(res) { 
-    for(let i=0; i < res.length; i++){
-        document.getElementById('results').innerHTML =
-        `<li>${res[i]}</li>`
-    }}
+  function showOutput(res1, res2) { 
+      document.getElementById('results').innerHTML =
+        `<li>${res1[1][1]}</li>`
+        console.log(res2)
+    }
 
 
 
