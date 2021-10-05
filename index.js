@@ -6,8 +6,6 @@ app.use(express.static('public'))
 
 
 
-let url = 'http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:*';
-
 
 app.get('/', (req, res)=> {
 res.render('index');

@@ -73,6 +73,17 @@ defaultOption2.text = 'Choose County';
 sub.add(defaultOption2);
 sub.selectedIndex = 0;
 
+//Radio button toggle display
+const stateRadioBtn = document.getElementById('stateRadio');
+const countyRadioBtn = document.getElementById('countyRadio');
+function toggler(){
+    if(stateRadioBtn.checked) {
+        document.getElementById('countyDiv').style.display='none';
+    }else if(!stateRadioBtn.checked){
+        document.getElementById('countyDiv').style.display='block';
+    }
+};
+
 var selectedOption
 var inputOption
 window.onload = function() {
@@ -84,6 +95,8 @@ window.onload = function() {
         option.value = stateKeys[i];
         main.add(option);
     }
+
+    stateRadioBtn.addEventListener('click', toggler)
 
     main.addEventListener('change', function(event){
         selectedOption = event.target.value;

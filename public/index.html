@@ -17,32 +17,25 @@
     </div>
     <form class="w-50 border border-white rounded p-3 mx-auto shadow" onsubmit="return false">
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">State</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stateRadio" value="State">
+        <label class="form-check-label" for="stateRadio">State</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">County</label>
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="countyRadio" value="County">
+        <label class="form-check-label" for="countyRadio">County</label>
       </div>
     
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Select State</label>
+        <label for="exampleFormControlSelect1">State</label>
         <select class="form-control" id="stateDropDown">
-          <option value="Alabama">Alabama</option>
-          <option value="Georgia">Georgia</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect2">Select County</label>
-        <select multiple class="form-control" id="countyDropDown">
-          <option></option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+      <div id="countyDiv" class="form-group">
+        <label for="exampleFormControlSelect2">County</label>
+        <select class="form-control" id="countyDropDown">
         </select>
       </div>
-      <div id="results" class="">
+      <div id="results" class="p-3">
         <h4>Disadvantaged Entrepreneurs</h4>
         <h4>Businesses Surviving First Years</h4>
         <h4>Jobs Awaiting Creation</h4>
