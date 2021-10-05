@@ -2,9 +2,9 @@
 let stateNames = {
     "Alabama"    :  {
         fips     : "01" ,
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .25,
+        survival : 77.2,
+        creation : 4.14,
         counties : {
             
         }
@@ -554,8 +554,3 @@ function showOutput(res1, res2) {
 
 
 
-
-    "01",
-    rateOfNew:.25  ,
-    survival : 77.2,
-    creation : 4.14,
