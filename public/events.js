@@ -1,61 +1,464 @@
 
 let stateNames = {
-    "Alabama"                :  {
-        fips     : "01",
+    "Alabama"    :  {
+        fips     : "01" ,
+        rateOfNew: ,
+        survival : ,
+        creation : ,
         counties : {
             
         }
     },
-    "Alaska"                 :  "02",
-    "Arizona"                :  "04",
-    "Arkansas"               :  "05",
-    "California"             :  "06",
-    "Colorado"               :  "08",
-    "Connecticut"            :  "09",
-    "Delaware"               :  "10",
-    "District of Columbia"   :  "11",
-    "Florida"                :  "12",
-    "Georgia"                :  "13",
-    "Hawaii"                 :  "15",
-    "Idaho"                  :  "16",
-    "Illinois"               :  "17",
-    "Indiana"                :  "18",
-    "Iowa"                   :  "19",
-    "Kansas"                 :  "20",
-    "Kentucky"               :  "21",
-    "Louisiana"              :  "22",
-    "Maine"                  :  "23",
-    "Maryland"               :  "24",
-    "Massachusetts"          :  "25",
-    "Michigan"               :  "26",
-    "Minnesota"              :  "27",
-    "Mississippi"            :  "28",
-    "Missouri"               :  "29",
-    "Montana"                :  "30",
-    "Nebraska"               :  "31",
-    "Nevada"                 :  "32",
-    "New Hampshire"          :  "33",
-    "New Jersey"             :  "34",
-    "New Mexico"             :  "35",
-    "New York"               :  "36",
-    "North Carolina"         :  "37",
-    "North Dakota"           :  "38",
-    "Ohio"                   :  "39",
-    "Oklahoma"               :  "40",
-    "Oregon"                 :  "41",
-    "Pennsylvania"           :  "42",
-    "Rhode Island"           :  "44",
-    "South Carolina"         :  "45",
-    "South Dakota"           :  "46",
-    "Tennessee"              :  "47",
-    "Texas"                  :  "48",
-    "Utah"                   :  "49",
-    "Vermont"                :  "50",
-    "Virginia"               :  "51",
-    "Washington"             :  "53",
-    "West Virginia"          :  "54",
-    "Wisconsin"              :  "55",
-    "Wyoming"                :  "56"
+    "Alaska"     :  {
+        fips     : "02",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Arizona"    :  {
+        fips     : "04",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Arkansas"               :  {
+        fips     : "05",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "California"             :{
+        fips     : "06" ,
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    }, 
+    "Colorado"               :  {
+        fips     : "08",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Connecticut"            :  {
+        fips     : "09",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Delaware"               :  {
+        fips     : "10",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "District of Columbia"   :  {
+        fips     : "11",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Florida"                :  {
+        fips     : "12",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Georgia"                :  {
+        fips     : "13",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Hawaii"                 :  {
+        fips     : "15",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Idaho"                  :  {
+        fips     : "16" ,
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Illinois"               : {
+        fips     : "17",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Indiana"                :  {
+        fips     : "18" ,
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Iowa"                   :  {
+        fips     : "19",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Kansas"                 :  {
+        fips     : "20",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Kentucky"               :  {
+        fips     : "21",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Louisiana"              : {
+        fips     : "22",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Maine"                  : {
+        fips     : "23",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Maryland"               :  {
+        fips     : "24",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Massachusetts"          : {
+        fips     : "25",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Michigan"               : {
+        fips     : "26",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Minnesota"              : {
+        fips     : "27",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Mississippi"            :  {
+        fips     : "28" ,
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Missouri"               : {
+        fips     : "29",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Montana"                : {
+        fips     : "30",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Nebraska"               : {
+        fips     : "31",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Nevada"                 : {
+        fips     : "32",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "New Hampshire"          : {
+        fips     : "33",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "New Jersey"             :  {
+        fips     : "34",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "New Mexico"             : {
+        fips     : "35",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "New York"               : {
+        fips     : "36",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "North Carolina"         : {
+        fips     : "37",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "North Dakota"           : {
+        fips     : "38",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Ohio"                   :  {
+        fips     : "39",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Oklahoma"               :  {
+        fips     : "40",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Oregon"                 : {
+        fips     : "41",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Pennsylvania"           : {
+        fips     : "42",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Rhode Island"           : {
+        fips     : "44",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "South Carolina"         : {
+        fips     : "45",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "South Dakota"           : {
+        fips     : "46",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Tennessee"              : {
+        fips     : "47",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Texas"                  :  {
+        fips     : "48",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Utah"                   :  {
+        fips     : "49",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Vermont"                : {
+        fips     : "50",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Virginia"               : {
+        fips     : "51",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Washington"             :  {
+        fips     : "53",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "West Virginia"          : {
+        fips     : "54",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Wisconsin"              : {
+        fips     : "55",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
+    "Wyoming"                : {
+        fips     : "56 ",
+        rateOfNew: ,
+        survival : ,
+        creation : ,
+        counties : {
+            
+        }
+    },
 };
 
 var main = document.getElementById('stateDropDown');
@@ -79,10 +482,13 @@ const countyRadioBtn = document.getElementById('countyRadio');
 function toggler(){
     if(stateRadioBtn.checked) {
         document.getElementById('countyDiv').style.display='none';
-    }else if(!stateRadioBtn.checked){
-        document.getElementById('countyDiv').style.display='block';
     }
 };
+function toggler2(){
+    if(countyRadioBtn.checked) {
+        document.getElementById('countyDiv').style.display='block'
+    }
+}; 
 
 var selectedOption
 var inputOption
@@ -96,7 +502,8 @@ window.onload = function() {
         main.add(option);
     }
 
-    stateRadioBtn.addEventListener('click', toggler)
+    stateRadioBtn.addEventListener('click', toggler);
+    countyRadioBtn.addEventListener('click', toggler2);
 
     main.addEventListener('change', function(event){
         selectedOption = event.target.value;
@@ -148,4 +555,7 @@ function showOutput(res1, res2) {
 
 
 
-
+    "01",
+    rateOfNew:.25  ,
+    survival : 77.2,
+    creation : 4.14,
