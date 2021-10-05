@@ -1,7 +1,11 @@
 
-
 let stateNames = {
-    "Alabama"                :  "01",
+    "Alabama"                :  {
+        fips     : "01",
+        counties : {
+            
+        }
+    },
     "Alaska"                 :  "02",
     "Arizona"                :  "04",
     "Arkansas"               :  "05",
@@ -52,24 +56,47 @@ let stateNames = {
     "West Virginia"          :  "54",
     "Wisconsin"              :  "55",
     "Wyoming"                :  "56"
- };
+};
 
 var main = document.getElementById('stateDropDown');
 var sub = document.getElementById('countyDropDown');
+
+//Default option for dropdown 
+main.length = 0;
+let defaultOption = document.createElement('option');
+defaultOption.text = 'Choose State';
+main.add(defaultOption);
+main.selectedIndex = 0;
+sub.length = 0;
+let defaultOption2 = document.createElement('option');
+defaultOption2.text = 'Choose County';
+sub.add(defaultOption2);
+sub.selectedIndex = 0;
+
 var selectedOption
 var inputOption
 window.onload = function() {
+    let option;
+    const stateKeys = Object.keys(stateNames);
+    for (let i = 0; i < stateKeys.length; i++) {
+        option = document.createElement('option');
+        option.text = stateKeys[i];
+        option.value = stateKeys[i];
+        main.add(option);
+    }
+
     main.addEventListener('change', function(event){
         selectedOption = event.target.value;
-        inputOption = stateNames[selectedOption];
+        inputOption = stateNames[selectedOption].fips;
         console.log(inputOption)
+        console.log(statePop)
     });
 
     document.getElementById('submitBtn').addEventListener('click', fetchData)
 };
 
     //State Population
-let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:01`
+let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
     //County Population
 let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:*&in=state:*'
     //State Poverty
@@ -81,20 +108,12 @@ let stateUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST13000000
     //County Unemployment
 let countyUnemp = 'http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:*'
 
-
-
 // Calling all of the API
-
 var getStatePopulation = axios.get(statePop);
-
 var getCountyPopulation = axios.get(countyPop);
-
 var getStatePoverty = axios.get(statePov);
-
 var getCountyPoverty = axios.get(countyPov);
-
 var getStateUnemployment = axios.get(stateUnemp);
-
 var getCountyUnemployment = axios.get(countyUnemp);
 
 async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
@@ -105,18 +124,9 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
     })
 };
 
-
-
-
-
-       
-
-
-
-  // Function to show the output
-
-  function showOutput(res1, res2) { 
-      document.getElementById('results').innerHTML =
+ // Function to show the output
+function showOutput(res1, res2) { 
+    document.getElementById('results').innerHTML =
         `<li>${res1[1]}</li>`
         console.log(res1)
     }
