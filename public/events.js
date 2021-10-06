@@ -627,9 +627,9 @@ let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVR
     //County Poverty
 let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:033&in=state:01&time=2019'
     //State Unemployment
-let stateUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST130000000000003'
+let stateUnemp = 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUST010000000000003'
     //County Unemployment
-let countyUnemp = 'http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:*'
+let countyUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST010000000000003'
 
 // Calling all of the API
 var getStatePopulation = axios.get(statePop);
@@ -642,16 +642,29 @@ var getCountyUnemployment = axios.get(countyUnemp);
 async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
     .then(function (response) {
         const resultsStatePop = response[0].data;
-        const resultsCountyPop = response[1].data
-        showOutput(resultsStatePop, resultsCountyPop)
+        const resultsCountyPop = response[1].data;
+        const resultsStatePov = response[2].data;
+        const resultsCountyPov = response[3].data;
+        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov)
     })
 };
 
  // Function to show the output
-function showOutput(res1, res2, res3, res4, res5, res6) { 
+function showOutput(res1, res2, res3, res4) { 
+    let population = (res1[1][1]);
+    let rateNew = stateNames.Alabama.rateOfNew;
+    let poverty = parseFloat(res3[1][0]);
+    let unemployment =  3.1
+    let popNew = population * rateNew;
+    let povUn = poverty + unemployment;
+    let disad = popNew*povUn;
+    
     document.getElementById('results').innerHTML =
-        `<li>${res1[1]}</li>`
-        console.log(res1)
+        `<p>${disad}</p>`
+        console.log(disad);
+        console.log(res2);
+        console.log(res3);
+        console.log(res4)
     }
 	
 
