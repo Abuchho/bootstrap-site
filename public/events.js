@@ -657,14 +657,16 @@ function showOutput(res1, res2, res3, res4) {
     let unemployment =  3.1
     let popNew = population * rateNew;
     let povUn = poverty + unemployment;
-    let disad = popNew*povUn;
+    let disad = popNew*povUn*.001;
     
     document.getElementById('results').innerHTML =
-        `<p>${disad}</p>`
+        
+    `<p>${disad}</p>`
         console.log(disad);
-        console.log(res2);
-        console.log(res3);
-        console.log(res4)
+        console.log(population);
+        console.log(poverty);
+        console.log(popNew)
+        console.log(povUn)
     }
 	
 
