@@ -81,7 +81,33 @@ let stateNames = {
         survival : 79.09,
         creation : 3.74,
         counties : {
-            
+            "Aleutians East": "013",
+	        "Aleutians West" : "016",
+	        "Anchorage" : "020",
+	        "Bethel" : "050",
+	        "Bristol Bay" : "060",
+	        "Denali" : "068",
+	        "Dillingham" : "070",
+	        "Fairbanks North Star" : "090",
+	        "Haines" : "100",
+	        "Juneau" : "110",
+	        "Kenai Peninsula" : "122",
+	        "Ketchikan Gateway" : "130",
+	        "Kodiak Island" : "150",
+	        "Lake and Peninsula" : "164",
+	        "Matanuska-Susitna" : "170",
+	        "Nome" : "180",
+	        "North Slope" : "185",
+	        "Northwest Arctic" : "188",
+	        "Prince of Wales-Outer Ketchikan" : "201",
+	        "Sitka" : "220",
+	        "Skagway-Hoonah-Angoon" : "232",
+	        "Southeast Fairbanks" : "240",
+	        "Valdez-Cordova" : "261",
+	        "Wade Hampton" : "270",
+	        "Wrangell-Petersburg" : "280",
+	        "Yakutat" : "282",
+	        "Yukon-Koyukuk" : "290"
         }
     },
     "Arizona"    :  {
@@ -559,7 +585,7 @@ function toggler2(){
 var selectedOption
 var inputOption
 window.onload = function() {
-    let option;
+    let option 
     const stateKeys = Object.keys(stateNames);
     for (let i = 0; i < stateKeys.length; i++) {
         option = document.createElement('option');
@@ -576,19 +602,30 @@ window.onload = function() {
         inputOption = stateNames[selectedOption].fips;
         console.log(inputOption)
         console.log(statePop)
+
+        let countyKeys = Object.keys(stateNames[selectedOption].counties)
+        sub.addEventListener('click', function(e){
+            for (let i = 0; i < countyKeys.length; i++) {
+                option = document.createElement('option');
+                option.text = countyKeys[i];
+                option.value = countyKeys[i];
+                sub.add(option);
+                console.log(countyKeys)
+            }
+        })
     });
 
     document.getElementById('submitBtn').addEventListener('click', fetchData)
 };
 
     //State Population
-let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
+let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:01`
     //County Population
-let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:*&in=state:*'
+let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:033&in=state:01'
     //State Poverty
-let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:*&time=2019'
+let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:01&time=2019'
     //County Poverty
-let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:*&in=state:*&time=2019'
+let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:033&in=state:01&time=2019'
     //State Unemployment
 let stateUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST130000000000003'
     //County Unemployment
@@ -611,9 +648,14 @@ async function fetchData() {await axios.all([getStatePopulation, getCountyPopula
 };
 
  // Function to show the output
-function showOutput(res1, res2) { 
+function showOutput(res1, res2, res3, res4, res5, res6) { 
     document.getElementById('results').innerHTML =
         `<li>${res1[1]}</li>`
         console.log(res1)
     }
 	
+
+
+
+
+
