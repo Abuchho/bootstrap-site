@@ -3,7 +3,7 @@ let stateNames = {
     "Alabama"    :  {
         fips     : "01" ,
         rateOfNew: .25,
-        survival : 77.2,
+        survival : 77.22,
         creation : 4.14,
         counties : {
             
@@ -11,450 +11,450 @@ let stateNames = {
     },
     "Alaska"     :  {
         fips     : "02",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .48,
+        survival : 79.09,
+        creation : 3.74,
         counties : {
             
         }
     },
     "Arizona"    :  {
         fips     : "04",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .38,
+        survival : 77.91,
+        creation : 4.75,
         counties : {
             
         }
     },
     "Arkansas"               :  {
         fips     : "05",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .33,
+        survival : 77.45,
+        creation : 4.15,
         counties : {
             
         }
     },
     "California"             :{
         fips     : "06" ,
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .43,
+        survival : 81.83,
+        creation : 6.43,
         counties : {
             
         }
     }, 
     "Colorado"               :  {
         fips     : "08",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .35,
+        survival : 76.86,
+        creation : 6.54,
         counties : {
             
         }
     },
     "Connecticut"            :  {
         fips     : "09",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .28,
+        survival : 77.67,
+        creation : 3.62,
         counties : {
             
         }
     },
     "Delaware"               :  {
         fips     : "10",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 76.21,
+        creation : 6.28,
         counties : {
             
         }
     },
     "District of Columbia"   :  {
         fips     : "11",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: 0,
+        survival : 0,
+        creation : 0,
         counties : {
             
         }
     },
     "Florida"                :  {
         fips     : "12",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .53,
+        survival : 75.78,
+        creation : 6.17,
         counties : {
             
         }
     },
     "Georgia"                :  {
         fips     : "13",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .36,
+        survival : 76.49,
+        creation : 5.38,
         counties : {
             
         }
     },
     "Hawaii"                 :  {
         fips     : "15",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .41,
+        survival : 75.09,
+        creation : 3.24,
         counties : {
             
         }
     },
     "Idaho"                  :  {
         fips     : "16" ,
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .38,
+        survival : 80.38,
+        creation : 6.43,
         counties : {
             
         }
     },
     "Illinois"               : {
         fips     : "17",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 78.78,
+        creation : 4.23,
         counties : {
             
         }
     },
     "Indiana"                :  {
         fips     : "18" ,
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .25,
+        survival : 77.95,
+        creation : 3.50,
         counties : {
             
         }
     },
     "Iowa"                   :  {
         fips     : "19",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .31,
+        survival : 79.82,
+        creation : 3.45,
         counties : {
             
         }
     },
     "Kansas"                 :  {
         fips     : "20",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .30,
+        survival : 74.84,
+        creation : 3.99,
         counties : {
             
         }
     },
     "Kentucky"               :  {
         fips     : "21",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 79.09,
+        creation : 3.71,
         counties : {
             
         }
     },
     "Louisiana"              : {
         fips     : "22",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .37,
+        survival : 81.08,
+        creation : 4.26,
         counties : {
             
         }
     },
     "Maine"                  : {
         fips     : "23",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .40,
+        survival : 78.82,
+        creation : 4.58,
         counties : {
             
         }
     },
     "Maryland"               :  {
         fips     : "24",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .26,
+        survival : 76.65,
+        creation : 4.01,
         counties : {
             
         }
     },
     "Massachusetts"          : {
         fips     : "25",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 80.53,
+        creation : 5.13,
         counties : {
             
         }
     },
     "Michigan"               : {
         fips     : "26",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .29,
+        survival : 71.79,
+        creation : 4.16,
         counties : {
             
         }
     },
     "Minnesota"              : {
         fips     : "27",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .18,
+        survival : 80.13,
+        creation : 3.60,
         counties : {
             
         }
     },
     "Mississippi"            :  {
         fips     : "28" ,
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .32,
+        survival : 79.88,
+        creation : 3.90,
         counties : {
             
         }
     },
     "Missouri"               : {
         fips     : "29",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .37,
+        survival : 76.01,
+        creation : 5.06,
         counties : {
             
         }
     },
     "Montana"                : {
         fips     : "30",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .35,
+        survival : 80.96,
+        creation : 5.57,
         counties : {
             
         }
     },
     "Nebraska"               : {
         fips     : "31",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 79.60,
+        creation : 4.96,
         counties : {
             
         }
     },
     "Nevada"                 : {
         fips     : "32",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .32,
+        survival : 77.79,
+        creation : 5.48,
         counties : {
             
         }
     },
     "New Hampshire"          : {
         fips     : "33",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .31,
+        survival : 76.82,
+        creation : 3.70,
         counties : {
             
         }
     },
     "New Jersey"             :  {
         fips     : "34",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .36,
+        survival : 79.58,
+        creation : 6.69,
         counties : {
             
         }
     },
     "New Mexico"             : {
         fips     : "35",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .51,
+        survival : 80.09,
+        creation : 4.17,
         counties : {
             
         }
     },
     "New York"               : {
         fips     : "36",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .39,
+        survival : 77.03,
+        creation : 5.30,
         counties : {
             
         }
     },
     "North Carolina"         : {
         fips     : "37",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .31,
+        survival : 78.18,
+        creation : 4.89,
         counties : {
             
         }
     },
     "North Dakota"           : {
         fips     : "38",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .32,
+        survival : 78.69,
+        creation : 4.53,
         counties : {
             
         }
     },
     "Ohio"                   :  {
         fips     : "39",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .25,
+        survival : 79.05,
+        creation : 3.80,
         counties : {
             
         }
     },
     "Oklahoma"               :  {
         fips     : "40",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .44,
+        survival : 78.93,
+        creation : 5.63,
         counties : {
             
         }
     },
     "Oregon"                 : {
         fips     : "41",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .29,
+        survival : 77.57,
+        creation : 4.85,
         counties : {
             
         }
     },
     "Pennsylvania"           : {
         fips     : "42",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .18,
+        survival : 79.05,
+        creation : 3.71,
         counties : {
             
         }
     },
     "Rhode Island"           : {
         fips     : "44",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .16,
+        survival : 75.75,
+        creation : 3.74,
         counties : {
             
         }
     },
     "South Carolina"         : {
         fips     : "45",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .26,
+        survival : 76.02,
+        creation : 5.32,
         counties : {
             
         }
     },
     "South Dakota"           : {
         fips     : "46",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .29,
+        survival : 77.28,
+        creation : 4.23,
         counties : {
             
         }
     },
     "Tennessee"              : {
         fips     : "47",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .35,
+        survival : 79.52,
+        creation : 4.49,
         counties : {
             
         }
     },
     "Texas"                  :  {
         fips     : "48",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .38,
+        survival : 79.63,
+        creation : 5.60,
         counties : {
             
         }
     },
     "Utah"                   :  {
         fips     : "49",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .24,
+        survival : 76.76,
+        creation : 5.38,
         counties : {
             
         }
     },
     "Vermont"                : {
         fips     : "50",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .41,
+        survival : 78.47,
+        creation : 3.06,
         counties : {
             
         }
     },
     "Virginia"               : {
         fips     : "51",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .23,
+        survival : 76.19,
+        creation : 5.24,
         counties : {
             
         }
     },
     "Washington"             :  {
         fips     : "53",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .27,
+        survival : 63.43,
+        creation : 4.66,
         counties : {
             
         }
     },
     "West Virginia"          : {
         fips     : "54",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .16,
+        survival : 77.37,
+        creation : 2.93,
         counties : {
             
         }
     },
     "Wisconsin"              : {
         fips     : "55",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .22,
+        survival : 78.89,
+        creation : 3.57,
         counties : {
             
         }
     },
     "Wyoming"                : {
         fips     : "56 ",
-        rateOfNew: ,
-        survival : ,
-        creation : ,
+        rateOfNew: .41,
+        survival : 77.07,
+        creation : 5.62,
         counties : {
             
         }
