@@ -375,7 +375,9 @@ let stateNames = {
         survival : 76.21,
         creation : 6.28,
         counties : {
-            
+            "Kent	": "001",
+            "New Castle	": "003",
+            "Sussex	": "005"
         }
     },
     "District of Columbia"   :  {
@@ -384,7 +386,7 @@ let stateNames = {
         survival : 0,
         creation : 0,
         counties : {
-            
+            "Washington": "001"
         }
     },
     "Florida"                :  {
@@ -393,7 +395,73 @@ let stateNames = {
         survival : 75.78,
         creation : 6.17,
         counties : {
-            
+            "Alachua"	: "001",
+            "Baker"	: "003",
+            "Bay"	: "005",
+            "Bradford"	: "007",
+            "Brevard"	: "009",
+            "Broward"	: "011",
+            "Calhoun"	: "013",
+            "Charlotte"	: "015",
+            "Citrus"	: "017",
+            "Clay"	: "019",
+            "Collier"	: "021",
+            "Columbia"	: "023",
+            "De Soto": "027",
+            "Dixie"	: "029",
+            "Duval"	: "031",
+            "Escambia"	: "033",
+            "Flagler"	: "035",
+            "Franklin"	: "037",
+            "Gadsden"	: "039",
+            "Gilchrist"	: "041",
+            "Glades"	: "043",
+            "Gulf"	: "045",
+            "Hamilton"	: "047",
+            "Hardee"	: "049",
+            "Hendry"	: "051",
+            "Hernando"	: "053",
+            "Highlands"	: "055",
+            "Hillsborough"	: "057",
+            "Holmes"	: "059",
+            "Indian River"	: "061",
+            "Jackson"	: "063",
+            "Jefferson"	: "065",
+            "Lafayette"	: "067",
+            "Lake"	: "069",
+            "Lee"	: "071",
+            "Leon"	: "073",
+            "Levy"	: "075",
+            "Liberty"	: "077",
+            "Madison"	: "079",
+            "Manatee"	: "081",
+            "Marion"	: "083",
+            "Martin"	: "085",
+            "Miami-Dade"	: "086",
+            "Monroe"	: "087",
+            "Nassau"	: "089",
+            "Okaloosa"	: "091",
+            "Okeechobee"	: "093",
+            "Orange"	: "095",
+            "Osceola"	: "097",
+            "Palm Beach"	: "099",
+            "Pasco"	: "101",
+            "Pinellas"	: "103",
+            "Polk"	: "105",
+            "Putnam"	: "107",
+            "St Johns"	: "109",
+            "St Lucie"	: "111",
+            "Santa Rosa"	: "113",
+            "Sarasota"	: "115",
+            "Seminole"	: "117",
+            "Sumter"	: "119",
+            "Suwannee"	: "121",
+            "Taylor"	: "123",
+            "Union"	: "125",
+            "Volusia"	: "127",
+            "Wakulla"	: "129",
+            "Walton"	: "131",
+            "Washington": "133"
         }
     },
     "Georgia"                :  {
@@ -402,7 +470,165 @@ let stateNames = {
         survival : 76.49,
         creation : 5.38,
         counties : {
-            
+            "Appling	": "001",
+            "Atkinson	": "003",
+            "Bacon	": "005",
+            "Baker	": "007",
+            "Baldwin	": "009",
+            "Banks	": "011",
+            "Barrow	": "013",
+            "Bartow	": "015",
+            "Ben Hill	": "017",
+            "Berrien	": "019",
+            "Bibb	": "021",
+            "Bleckley	": "023",
+            "Brantley	": "025",
+            "Brooks	": "027",
+            "Bryan	": "029",
+            "Bulloch	": "031",
+            "Burke	": "033",
+            "Butts	": "035",
+            "Calhoun	": "037",
+            "Camden	": "039",
+            "Candler	": "043",
+            "Carroll	": "045",
+            "Catoosa	": "047",
+            "Charlton	": "049",
+            "Chatham	": "051",
+            "Chattahoochee	": "053",
+            "Chattooga	": "055",
+            "Cherokee	": "057",
+            "Clarke	": "059",
+            "Clay	": "061",
+            "Clayton	": "063",
+            "Clinch	": "065",
+            "Cobb	": "067",
+            "Coffee	": "069",
+            "Colquitt	": "071",
+            "Columbia	": "073",
+            "Cook	": "075",
+            "Coweta	": "077",
+            "Crawford	": "079",
+            "Crisp	": "081",
+            "Dade	": "083",
+            "Dawson	": "085",
+            "Decatur	": "087",
+            "De Kalb	": "089",
+            "Dodge	": "091",
+            "Dooly	": "093",
+            "Dougherty	": "095",
+            "Douglas	": "097",
+            "Early	": "099",
+            "Echols	": "101",
+            "Effingham	": "103",
+            "Elbert	": "105",
+            "Emanuel	": "107",
+            "Evans	": "109",
+            "Fannin	": "111",
+            "Fayette	": "113",
+            "Floyd	": "115",
+            "Forsyth	": "117",
+            "Franklin	": "119",
+            "Fulton	": "121",
+            "Gilmer	": "123",
+            "Glascock	": "125",
+            "Glynn	": "127",
+            "Gordon	": "129",
+            "Grady	": "131",
+            "Greene	": "133",
+            "Gwinnett	": "135",
+            "Habersham	": "137",
+            "Hall	": "139",
+            "Hancock	": "141",
+            "Haralson	": "143",
+            "Harris	": "145",
+            "Hart	": "147",
+            "Heard	": "149",
+            "Henry	": "151",
+            "Houston	": "153",
+            "Irwin	": "155",
+            "Jackson	": "157",
+            "Jasper	": "159",
+            "Jeff Davis	": "161",
+            "Jefferson	": "163",
+            "Jenkins	": "165",
+            "Johnson	": "167",
+            "Jones	": "169",
+            "Lamar	": "171",
+            "Lanier	": "173",
+            "Laurens	": "175",
+            "Lee	": "177",
+            "Liberty	": "179",
+            "Lincoln	": "181",
+            "Long	": "183",
+            "Lowndes	": "185",
+            "Lumpkin	": "187",
+            "McDuffie	": "189",
+            "McIntosh	": "191",
+            "Macon	": "193",
+            "Madison	": "195",
+            "Marion	": "197",
+            "Meriwether	": "199",
+            "Miller	": "201",
+            "Mitchell	": "205",
+            "Monroe	": "207",
+            "Montgomery	": "209",
+            "Morgan	": "211",
+            "Murray	": "213",
+            "Muscogee	": "215",
+            "Newton	": "217",
+            "Oconee	": "219",
+            "Oglethorpe	": "221",
+            "Paulding	": "223",
+            "Peach	": "225",
+            "Pickens	": "227",
+            "Pierce	": "229",
+            "Pike	": "231",
+            "Polk	": "233",
+            "Pulaski	": "235",
+            "Putnam	": "237",
+            "Quitman	": "239",
+            "Rabun	": "241",
+            "Randolph	": "243",
+            "Richmond	": "245",
+            "Rockdale	": "247",
+            "Schley	": "249",
+            "Screven	": "251",
+            "Seminole	": "253",
+            "Spalding	": "255",
+            "Stephens	": "257",
+            "Stewart	": "259",
+            "Sumter	": "261",
+            "Talbot	": "263",
+            "Taliaferro	": "265",
+            "Tattnall	": "267",
+            "Taylor	": "269",
+            "Telfair	": "271",
+            "Terrell	": "273",
+            "Thomas	": "275",
+            "Tift	": "277",
+            "Toombs	": "279",
+            "Towns	": "281",
+            "Treutlen	": "283",
+            "Troup	": "285",
+            "Turner	": "287",
+            "Twiggs	": "289",
+            "Union	": "291",
+            "Upson	": "293",
+            "Walker	": "295",
+            "Walton	": "297",
+            "Ware	": "299",
+            "Warren	": "301",
+            "Washington	": "303",
+            "Wayne	": "305",
+            "Webster	": "307",
+            "Wheeler	": "309",
+            "White	": "311",
+            "Whitfield	": "313",
+            "Wilcox	": "315",
+            "Wilkes	": "317",
+            "Wilkinson	": "319",
+            "Worth	": "321"
         }
     },
     "Hawaii"                 :  {
@@ -411,7 +637,10 @@ let stateNames = {
         survival : 75.09,
         creation : 3.24,
         counties : {
-            
+            "Hawaii	":"001",
+            "Honolulu	":"003",
+            "Kauai	":"007",
+            "Maui	":"009"
         }
     },
     "Idaho"                  :  {
@@ -420,7 +649,50 @@ let stateNames = {
         survival : 80.38,
         creation : 6.43,
         counties : {
-            
+            "Ada	": "001",
+            "Adams	": "003",
+            "Bannock	": "005",
+            "Bear Lake	": "007",
+            "Benewah	": "009",
+            "Bingham	": "011",
+            "Blaine	": "013",
+            "Boise	": "015",
+            "Bonner	": "017",
+            "Bonneville	": "019",
+            "Boundary	": "021",
+            "Butte	": "023",
+            "Camas	": "025",
+            "Canyon	": "027",
+            "Caribou	": "029",
+            "Cassia	": "031",
+            "Clark	": "033",
+            "Clearwater	": "035",
+            "Custer	": "037",
+            "Elmore	": "039",
+            "Franklin	": "041",
+            "Fremont	": "043",
+            "Gem	": "045",
+            "Gooding	": "047",
+            "Idaho	": "049",
+            "Jefferson	": "051",
+            "Jerome	": "053",
+            "Kootenai	": "055",
+            "Latah	": "057",
+            "Lemhi	": "059",
+            "Lewis	": "061",
+            "Lincoln	": "063",
+            "Madison	": "065",
+            "Minidoka	": "067",
+            "Nez Perce	": "069",
+            "Oneida	": "071",
+            "Owyhee	": "073",
+            "Payette	": "075",
+            "Power	": "077",
+            "Shoshone	": "079",
+            "Teton	": "081",
+            "Twin Falls	": "083",
+            "Valley	": "085",
+            "Washington	": "087"
         }
     },
     "Illinois"               : {
@@ -429,7 +701,108 @@ let stateNames = {
         survival : 78.78,
         creation : 4.23,
         counties : {
-            
+            "Adams	": "001",
+            "Alexander	": "003",
+            "Bond	": "005",
+            "Boone	": "007",
+            "Brown	": "009",
+            "Bureau	": "011",
+            "Calhoun	": "013",
+            "Carroll	": "015",
+            "Cass	": "017",
+            "Champaign	": "019",
+            "Christian	": "021",
+            "Clark	": "023",
+            "Clay	": "025",
+            "Clinton	": "027",
+            "Coles	": "029",
+            "Cook	": "031",
+            "Crawford	": "033",
+            "Cumberland	": "035",
+            "De Kalb	": "037",
+            "De Witt	": "039",
+            "Douglas	": "041",
+            "Du Page	": "043",
+            "Edgar	": "045",
+            "Edwards	": "047",
+            "Effingham	": "049",
+            "Fayette	": "051",
+            "Ford	": "053",
+            "Franklin	": "055",
+            "Fulton	": "057",
+            "Gallatin	": "059",
+            "Greene	": "061",
+            "Grundy	": "063",
+            "Hamilton	": "065",
+            "Hancock	": "067",
+            "Hardin	": "069",
+            "Henderson	": "071",
+            "Henry	": "073",
+            "Iroquois	": "075",
+            "Jackson	": "077",
+            "Jasper	": "079",
+            "Jefferson	": "081",
+            "Jersey	": "083",
+            "Jo Daviess	": "085",
+            "Johnson	": "087",
+            "Kane	": "089",
+            "Kankakee	": "091",
+            "Kendall	": "093",
+            "Knox	": "095",
+            "Lake	": "097",
+            "La Salle	": "099",
+            "Lawrence	": "101",
+            "Lee	": "103",
+            "Livingston	": "105",
+            "Logan	": "107",
+            "McDonough	": "109",
+            "McHenry	": "111",
+            "McLean	": "113",
+            "Macon	": "115",
+            "Macoupin	": "117",
+            "Madison	": "119",
+            "Marion	": "121",
+            "Marshall	": "123",
+            "Mason	": "125",
+            "Massac	": "127",
+            "Menard	": "129",
+            "Mercer	": "131",
+            "Monroe	": "133",
+            "Montgomery	": "135",
+            "Morgan	": "137",
+            "Moultrie	": "139",
+            "Ogle	": "141",
+            "Peoria	": "143",
+            "Perry	": "145",
+            "Piatt	": "147",
+            "Pike	": "149",
+            "Pope	": "151",
+            "Pulaski	": "153",
+            "Putnam	": "155",
+            "Randolph	": "157",
+            "Richland	": "159",
+            "Rock Island	": "161",
+            "St Clair	": "163",
+            "Saline	": "165",
+            "Sangamon	": "167",
+            "Schuyler	": "169",
+            "Scott	": "171",
+            "Shelby	": "173",
+            "Stark	": "175",
+            "Stephenson	": "177",
+            "Tazewell	": "179",
+            "Union	": "181",
+            "Vermilion	": "183",
+            "Wabash	": "185",
+            "Warren	": "187",
+            "Washington	": "189",
+            "Wayne	": "191",
+            "White	": "193",
+            "Whiteside	": "195",
+            "Will	": "197",
+            "Williamson	": "199",
+            "Winnebago	": "201",
+            "Woodford": "203"
         }
     },
     "Indiana"                :  {
@@ -438,7 +811,98 @@ let stateNames = {
         survival : 77.95,
         creation : 3.50,
         counties : {
-            
+            "Adams	": "001",
+            "Allen	": "003",
+            "Bartholomew	": "005",
+            "Benton": "007",
+            "Blackford": "009",
+            "Boone": "011",
+            "Brown": "013",
+            "Carroll": "015",
+            "Cass": "017",
+            "Clark": "019",
+            "Clay": "021",
+            "Clinton": "023",
+            "Crawford": "025",
+            "Daviess": "027",
+            "Dearborn": "029",
+            "Decatur": "031",
+            "De Kalb": "033",
+            "Delaware": "035",
+            "Dubois": "037",
+            "Elkhart": "039",
+            "Fayette": "041",
+            "Floyd": "043",
+            "Fountain": "045",
+            "Franklin": "047",
+            "Fulton": "049",
+            "Gibson": "051",
+            "Grant": "053",
+            "Greene": "055",
+            "Hamilton": "057",
+            "Hancock": "059",
+            "Harrison": "061",
+            "Hendricks": "063",
+            "Henry": "065",
+            "Howard": "067",
+            "Huntington": "069",
+            "Jackson": "071",
+            "Jasper": "073",
+            "Jay": "075",
+            "Jefferson": "077",
+            "Jennings": "079",
+            "Johnson": "081",
+            "Knox": "083",
+            "Kosciusko": "085",
+            "La Grange": "087",
+            "Lake": "089",
+            "La Porte": "091",
+            "Lawrence": "093",
+            "Madison": "095",
+            "Marion": "097",
+            "Marshall": "099",
+            "Martin": "101",
+            "Miami": "103",
+            "Monroe": "105",
+            "Montgomery": "107",
+            "Morgan": "109",
+            "Newton": "111",
+            "Noble": "113",
+            "Ohio": "115",
+            "Orange": "117",
+            "Owen": "119",
+            "Parke": "121",
+            "Perry": "123",
+            "Pike": "125",
+            "Porter": "127",
+            "Posey": "129",
+            "Pulaski": "131",
+            "Putnam": "133",
+            "Randolph": "135",
+            "Ripley": "137",
+            "Rush": "139",
+            "St Joseph": "141",
+            "Scott": "143",
+            "Shelby": "145",
+            "Spencer": "147",
+            "Starke": "149",
+            "Steuben": "151",
+            "Sullivan": "153",
+            "Switzerland": "155",
+            "Tippecanoe": "157",
+            "Tipton": "159",
+            "Union": "161",
+            "Vanderburgh": "163",
+            "Vermillion": "165",
+            "Vigo": "167",
+            "Wabash": "169",
+            "Warren": "171",
+            "Warrick": "173",
+            "Washington": "175",
+            "Wayne": "177",
+            "Wells": "179",
+            "White": "181",
+            "Whitley": "183"
         }
     },
     "Iowa"                   :  {
@@ -888,485 +1352,101 @@ function showOutput(res1, res2, res3, res4) {
 
 
 
-10001	Kent	
-10003	New Castle	
-10005	Sussex	
 
-11001	Washington	
 
-12001	Alachua	
-12003	Baker	
-12005	Bay	
-12007	Bradford	
-12009	Brevard	
-12011	Broward	
-12013	Calhoun	
-12015	Charlotte	
-12017	Citrus	
-12019	Clay	
-12021	Collier	
-12023	Columbia	
-12027	De Soto	
-12029	Dixie	
-12031	Duval	
-12033	Escambia	
-12035	Flagler	
-12037	Franklin	
-12039	Gadsden	
-12041	Gilchrist	
-12043	Glades	
-12045	Gulf	
-12047	Hamilton	
-12049	Hardee	
-12051	Hendry	
-12053	Hernando	
-12055	Highlands	
-12057	Hillsborough	
-12059	Holmes	
-12061	Indian River	
-12063	Jackson	
-12065	Jefferson	
-12067	Lafayette	
-12069	Lake	
-12071	Lee	
-12073	Leon	
-12075	Levy	
-12077	Liberty	
-12079	Madison	
-12081	Manatee	
-12083	Marion	
-12085	Martin	
-12086	Miami-Dade	
-12087	Monroe	
-12089	Nassau	
-12091	Okaloosa	
-12093	Okeechobee	
-12095	Orange	
-12097	Osceola	
-12099	Palm Beach	
-12101	Pasco	
-12103	Pinellas	
-12105	Polk	
-12107	Putnam	
-12109	St Johns	
-12111	St Lucie	
-12113	Santa Rosa	
-12115	Sarasota	
-12117	Seminole	
-12119	Sumter	
-12121	Suwannee	
-12123	Taylor	
-12125	Union	
-12127	Volusia	
-12129	Wakulla	
-12131	Walton	
-12133	Washington
 
-13001	Appling	
-13003	Atkinson	
-13005	Bacon	
-13007	Baker	
-13009	Baldwin	
-13011	Banks	
-13013	Barrow	
-13015	Bartow	
-13017	Ben Hill	
-13019	Berrien	
-13021	Bibb	
-13023	Bleckley	
-13025	Brantley	
-13027	Brooks	
-13029	Bryan	
-13031	Bulloch	
-13033	Burke	
-13035	Butts	
-13037	Calhoun	
-13039	Camden	
-13043	Candler	
-13045	Carroll	
-13047	Catoosa	
-13049	Charlton	
-13051	Chatham	
-13053	Chattahoochee	
-13055	Chattooga	
-13057	Cherokee	
-13059	Clarke	
-13061	Clay	
-13063	Clayton	
-13065	Clinch	
-13067	Cobb	
-13069	Coffee	
-13071	Colquitt	
-13073	Columbia	
-13075	Cook	
-13077	Coweta	
-13079	Crawford	
-13081	Crisp	
-13083	Dade	
-13085	Dawson	
-13087	Decatur	
-13089	De Kalb	
-13091	Dodge	
-13093	Dooly	
-13095	Dougherty	
-13097	Douglas	
-13099	Early	
-13101	Echols	
-13103	Effingham	
-13105	Elbert	
-13107	Emanuel	
-13109	Evans	
-13111	Fannin	
-13113	Fayette	
-13115	Floyd	
-13117	Forsyth	
-13119	Franklin	
-13121	Fulton	
-13123	Gilmer	
-13125	Glascock	
-13127	Glynn	
-13129	Gordon	
-13131	Grady	
-13133	Greene	
-13135	Gwinnett	
-13137	Habersham	
-13139	Hall	
-13141	Hancock	
-13143	Haralson	
-13145	Harris	
-13147	Hart	
-13149	Heard	
-13151	Henry	
-13153	Houston	
-13155	Irwin	
-13157	Jackson	
-13159	Jasper	
-13161	Jeff Davis	
-13163	Jefferson	
-13165	Jenkins	
-13167	Johnson	
-13169	Jones	
-13171	Lamar	
-13173	Lanier	
-13175	Laurens	
-13177	Lee	
-13179	Liberty	
-13181	Lincoln	
-13183	Long	
-13185	Lowndes	
-13187	Lumpkin	
-13189	McDuffie	
-13191	McIntosh	
-13193	Macon	
-13195	Madison	
-13197	Marion	
-13199	Meriwether	
-13201	Miller	
-13205	Mitchell	
-13207	Monroe	
-13209	Montgomery	
-13211	Morgan	
-13213	Murray	
-13215	Muscogee	
-13217	Newton	
-13219	Oconee	
-13221	Oglethorpe	
-13223	Paulding	
-13225	Peach	
-13227	Pickens	
-13229	Pierce	
-13231	Pike	
-13233	Polk	
-13235	Pulaski	
-13237	Putnam	
-13239	Quitman	
-13241	Rabun	
-13243	Randolph	
-13245	Richmond	
-13247	Rockdale	
-13249	Schley	
-13251	Screven	
-13253	Seminole	
-13255	Spalding	
-13257	Stephens	
-13259	Stewart	
-13261	Sumter	
-13263	Talbot	
-13265	Taliaferro	
-13267	Tattnall	
-13269	Taylor	
-13271	Telfair	
-13273	Terrell	
-13275	Thomas	
-13277	Tift	
-13279	Toombs	
-13281	Towns	
-13283	Treutlen	
-13285	Troup	
-13287	Turner	
-13289	Twiggs	
-13291	Union	
-13293	Upson	
-13295	Walker	
-13297	Walton	
-13299	Ware	
-13301	Warren	
-13303	Washington	
-13305	Wayne	
-13307	Webster	
-13309	Wheeler	
-13311	White	
-13313	Whitfield	
-13315	Wilcox	
-13317	Wilkes	
-13319	Wilkinson	
-13321	Worth	
-
-15001	Hawaii	
-15003	Honolulu	
-15007	Kauai	
-15009	Maui	
-
-16001	Ada	
-16003	Adams	
-16005	Bannock	
-16007	Bear Lake	
-16009	Benewah	
-16011	Bingham	
-16013	Blaine	
-16015	Boise	
-16017	Bonner	
-16019	Bonneville	
-16021	Boundary	
-16023	Butte	
-16025	Camas	
-16027	Canyon	
-16029	Caribou	
-16031	Cassia	
-16033	Clark	
-16035	Clearwater	
-16037	Custer	
-16039	Elmore	
-16041	Franklin	
-16043	Fremont	
-16045	Gem	
-16047	Gooding	
-16049	Idaho	
-16051	Jefferson	
-16053	Jerome	
-16055	Kootenai	
-16057	Latah	
-16059	Lemhi	
-16061	Lewis	
-16063	Lincoln	
-16065	Madison	
-16067	Minidoka	
-16069	Nez Perce	
-16071	Oneida	
-16073	Owyhee	
-16075	Payette	
-16077	Power	
-16079	Shoshone	
-16081	Teton	
-16083	Twin Falls	
-16085	Valley	
-16087	Washington	
-
-17001	Adams	
-17003	Alexander	
-17005	Bond	
-17007	Boone	
-17009	Brown	
-17011	Bureau	
-17013	Calhoun	
-17015	Carroll	
-17017	Cass	
-17019	Champaign	
-17021	Christian	
-17023	Clark	
-17025	Clay	
-17027	Clinton	
-17029	Coles	
-17031	Cook	
-17033	Crawford	
-17035	Cumberland	
-17037	De Kalb	
-17039	De Witt	
-17041	Douglas	
-17043	Du Page	
-17045	Edgar	
-17047	Edwards	
-17049	Effingham	
-17051	Fayette	
-17053	Ford	
-17055	Franklin	
-17057	Fulton	
-17059	Gallatin	
-17061	Greene	
-17063	Grundy	
-17065	Hamilton	
-17067	Hancock	
-17069	Hardin	
-17071	Henderson	
-17073	Henry	
-17075	Iroquois	
-17077	Jackson	
-17079	Jasper	
-17081	Jefferson	
-17083	Jersey	
-17085	Jo Daviess	
-17087	Johnson	
-17089	Kane	
-17091	Kankakee	
-17093	Kendall	
-17095	Knox	
-17097	Lake	
-17099	La Salle	
-17101	Lawrence	
-17103	Lee	
-17105	Livingston	
-17107	Logan	
-17109	McDonough	
-17111	McHenry	
-17113	McLean	
-17115	Macon	
-17117	Macoupin	
-17119	Madison	
-17121	Marion	
-17123	Marshall	
-17125	Mason	
-17127	Massac	
-17129	Menard	
-17131	Mercer	
-17133	Monroe	
-17135	Montgomery	
-17137	Morgan	
-17139	Moultrie	
-17141	Ogle	
-17143	Peoria	
-17145	Perry	
-17147	Piatt	
-17149	Pike	
-17151	Pope	
-17153	Pulaski	
-17155	Putnam	
-17157	Randolph	
-17159	Richland	
-17161	Rock Island	
-17163	St Clair	
-17165	Saline	
-17167	Sangamon	
-17169	Schuyler	
-17171	Scott	
-17173	Shelby	
-17175	Stark	
-17177	Stephenson	
-17179	Tazewell	
-17181	Union	
-17183	Vermilion	
-17185	Wabash	
-17187	Warren	
-17189	Washington	
-17191	Wayne	
-17193	White	
-17195	Whiteside	
-17197	Will	
-17199	Williamson	
-17201	Winnebago	
-17203	Woodford
-
-18001	Adams	
-18003	Allen	
-18005	Bartholomew	
-18007	Benton	
-18009	Blackford	
-18011	Boone	
-18013	Brown	
-18015	Carroll	
-18017	Cass	
-18019	Clark	
-18021	Clay	
-18023	Clinton	
-18025	Crawford	
-18027	Daviess	
-18029	Dearborn	
-18031	Decatur	
-18033	De Kalb	
-18035	Delaware	
-18037	Dubois	
-18039	Elkhart	
-18041	Fayette	
-18043	Floyd	
-18045	Fountain	
-18047	Franklin	
-18049	Fulton	
-18051	Gibson	
-18053	Grant	
-18055	Greene	
-18057	Hamilton	
-18059	Hancock	
-18061	Harrison	
-18063	Hendricks	
-18065	Henry	
-18067	Howard	
-18069	Huntington	
-18071	Jackson	
-18073	Jasper	
-18075	Jay	
-18077	Jefferson	
-18079	Jennings	
-18081	Johnson	
-18083	Knox	
-18085	Kosciusko	
-18087	La Grange	
-18089	Lake	
-18091	La Porte	
-18093	Lawrence	
-18095	Madison	
-18097	Marion	
-18099	Marshall	
-18101	Martin	
-18103	Miami	
-18105	Monroe	
-18107	Montgomery	
-18109	Morgan	
-18111	Newton	
-18113	Noble	
-18115	Ohio	
-18117	Orange	
-18119	Owen	
-18121	Parke	
-18123	Perry	
-18125	Pike	
-18127	Porter	
-18129	Posey	
-18131	Pulaski	
-18133	Putnam	
-18135	Randolph	
-18137	Ripley	
-18139	Rush	
-18141	St Joseph	
-18143	Scott	
-18145	Shelby	
-18147	Spencer	
-18149	Starke	
-18151	Steuben	
-18153	Sullivan	
-18155	Switzerland	
-18157	Tippecanoe	
-18159	Tipton	
-18161	Union	
-18163	Vanderburgh	
-18165	Vermillion	
-18167	Vigo	
-18169	Wabash	
-18171	Warren	
-18173	Warrick	
-18175	Washington	
-18177	Wayne	
-18179	Wells	
-18181	White	
-18183	Whitley	
+"Adams	": "001",
+"Allen	": "003",
+"Bartholomew	": "005",
+"Benton	": "007",
+"Blackford	": "009",
+"Boone	": "011",
+"Brown	": "013",
+"Carroll	": "015",
+"Cass	": "017",
+"Clark	": "019",
+"Clay	": "021",
+"Clinton	": "023",
+"Crawford	": "025",
+"Daviess	": "027",
+"Dearborn	": "029",
+"Decatur	": "031",
+"De Kalb	": "033",
+"Delaware	": "035",
+"Dubois	": "037",
+"Elkhart	": "039",
+"Fayette	": "041",
+"Floyd	": "043",
+"Fountain	": "045",
+"Franklin	": "047",
+"Fulton	": "049",
+"Gibson	": "051",
+"Grant	": "053",
+"Greene	": "055",
+"Hamilton	": "057",
+"Hancock	": "059",
+"Harrison	": "061",
+"Hendricks	": "063",
+"Henry	": "065",
+"Howard	": "067",
+"Huntington	": "069",
+"Jackson	": "071",
+"Jasper	": "073",
+"Jay	": "075",
+"Jefferson	": "077",
+"Jennings	": "079",
+"Johnson	": "081",
+"Knox	": "083",
+"Kosciusko	": "085",
+"La Grange	": "087",
+"Lake	": "089",
+"La Porte	": "091",
+"Lawrence	": "093",
+"Madison	": "095",
+"Marion	": "097",
+"Marshall	": "099",
+"Martin	": "101",
+"Miami	": "103",
+"Monroe	": "105",
+"Montgomery	": "107",
+"Morgan	": "109",
+"Newton	": "111",
+"Noble	": "113",
+"Ohio	": "115",
+"Orange	": "117",
+"Owen	": "119",
+"Parke	": "121",
+"Perry	": "123",
+"Pike	": "125",
+"Porter	": "127",
+"Posey	": "129",
+"Pulaski	": "131",
+"Putnam	": "133",
+"Randolph	": "135",
+"Ripley	": "137",
+"Rush	": "139",
+"St Joseph	": "141",
+"Scott	": "143",
+"Shelby	": "145",
+"Spencer	": "147",
+"Starke	": "149",
+"Steuben	": "151",
+"Sullivan	": "153",
+"Switzerland	": "155",
+"Tippecanoe	": "157",
+"Tipton	": "159",
+"Union	": "161",
+"Vanderburgh	": "163",
+"Vermillion	": "165",
+"Vigo	": "167",
+"Wabash	": "169",
+"Warren	": "171",
+"Warrick	": "173",
+"Washington	": "175",
+"Wayne	": "177",
+"Wells	": "179",
+"White	": "181",
+"Whitley	": "183",
 
 19001	Adair	
 19003	Adams	
