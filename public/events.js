@@ -911,7 +911,105 @@ let stateNames = {
         survival : 79.82,
         creation : 3.45,
         counties : {
-            
+            "Adair": "001",
+            "Adams	": "003",
+            "Allamakee	": "005",
+            "Appanoose	": "007",
+            "Audubon	": "009",
+            "Benton	": "011",
+            "Black Hawk	": "013",
+            "Boone	": "015",
+            "Bremer	": "017",
+            "Buchanan	": "019",
+            "Buena Vista	": "021",
+            "Butler	": "023",
+            "Calhoun	": "025",
+            "Carroll	": "027",
+            "Cass	": "029",
+            "Cedar	": "031",
+            "Cerro Gordo	": "033",
+            "Cherokee	": "035",
+            "Chickasaw	": "037",
+            "Clarke	": "039",
+            "Clay	": "041",
+            "Clayton	": "043",
+            "Clinton	": "045",
+            "Crawford	": "047",
+            "Dallas	": "049",
+            "Davis	": "051",
+            "Decatur	": "053",
+            "Delaware	": "055",
+            "Des Moines	": "057",
+            "Dickinson	": "059",
+            "Dubuque	": "061",
+            "Emmet	": "063",
+            "Fayette	": "065",
+            "Floyd	": "067",
+            "Franklin	": "069",
+            "Fremont	": "071",
+            "Greene	": "073",
+            "Grundy	": "075",
+            "Guthrie	": "077",
+            "Hamilton	": "079",
+            "Hancock	": "081",
+            "Hardin	": "083",
+            "Harrison	": "085",
+            "Henry	": "087",
+            "Howard	": "089",
+            "Humboldt	": "091",
+            "Ida	": "093",
+            "Iowa	": "095",
+            "Jackson	": "097",
+            "Jasper	": "099",
+            "Jefferson	": "101",
+            "Johnson	": "103",
+            "Jones	": "105",
+            "Keokuk	": "107",
+            "Kossuth	": "109",
+            "Lee	": "111",
+            "Linn	": "113",
+            "Louisa	": "115",
+            "Lucas	": "117",
+            "Lyon	": "119",
+            "Madison	": "121",
+            "Mahaska	": "123",
+            "Marion	": "125",
+            "Marshall	": "127",
+            "Mills	": "129",
+            "Mitchell	": "131",
+            "Monona	": "133",
+            "Monroe	": "135",
+            "Montgomery	": "137",
+            "Muscatine	": "139",
+            "O Brien	": "141",
+            "Osceola	": "143",
+            "Page	": "145",
+            "Palo Alto	": "147",
+            "Plymouth	": "149",
+            "Pocahontas	": "151",
+            "Polk	": "153",
+            "Pottawattamie	": "155",
+            "Poweshiek	": "157",
+            "Ringgold	": "159",
+            "Sac	": "161",
+            "Scott	": "163",
+            "Shelby	": "165",
+            "Sioux	": "167",
+            "Story	": "169",
+            "Tama	": "171",
+            "Taylor	": "173",
+            "Union	": "175",
+            "Van Buren	": "177",
+            "Wapello	": "179",
+            "Warren	": "181",
+            "Washington	": "183",
+            "Wayne	": "185",
+            "Webster	": "187",
+            "Winnebago	": "189",
+            "Winneshiek	": "191",
+            "Woodbury	": "193",
+            "Worth	": "195",
+            "Wright	": "197"
         }
     },
     "Kansas"                 :  {
@@ -920,7 +1018,111 @@ let stateNames = {
         survival : 74.84,
         creation : 3.99,
         counties : {
-            
+            "Allen	": "001",
+            "Anderson	": "003",
+            "Atchison	": "005",
+            "Barber	": "007",
+            "Barton	": "009",
+            "Bourbon	": "011",
+            "Brown	": "013",
+            "Butler	": "015",
+            "Chase	": "017",
+            "Chautauqua	": "019",
+            "Cherokee	": "021",
+            "Cheyenne	": "023",
+            "Clark	": "025",
+            "Clay	": "027",
+            "Cloud	": "029",
+            "Coffey	": "031",
+            "Comanche	": "033",
+            "Cowley	": "035",
+            "Crawford	": "037",
+            "Decatur	": "039",
+            "Dickinson	": "041",
+            "Doniphan	": "043",
+            "Douglas	": "045",
+            "Edwards	": "047",
+            "Elk	": "049",
+            "Ellis	": "051",
+            "Ellsworth	": "053",
+            "Finney	": "055",
+            "Ford	": "057",
+            "Franklin	": "059",
+            "Geary	": "061",
+            "Gove	": "063",
+            "Graham	": "065",
+            "Grant	": "067",
+            "Gray	": "069",
+            "Greeley	": "071",
+            "Greenwood	": "073",
+            "Hamilton	": "075",
+            "Harper	": "077",
+            "Harvey	": "079",
+            "Haskell	": "081",
+            "Hodgeman	": "083",
+            "Jackson	": "085",
+            "Jefferson	": "087",
+            "Jewell	": "089",
+            "Johnson	": "091",
+            "Kearny	": "093",
+            "Kingman	": "095",
+            "Kiowa	": "097",
+            "Labette	": "099",
+            "Lane	": "101",
+            "Leavenworth	": "103",
+            "Lincoln	": "105",
+            "Linn	": "107",
+            "Logan	": "109",
+            "Lyon	": "111",
+            "McPherson	": "113",
+            "Marion	": "115",
+            "Marshall	": "117",
+            "Meade	": "119",
+            "Miami	": "121",
+            "Mitchell	": "123",
+            "Montgomery	": "125",
+            "Morris	": "127",
+            "Morton	": "129",
+            "Nemaha	": "131",
+            "Neosho	": "133",
+            "Ness	": "135",
+            "Norton	": "137",
+            "Osage	": "139",
+            "Osborne	": "141",
+            "Ottawa	": "143",
+            "Pawnee	": "145",
+            "Phillips	": "147",
+            "Pottawatomie	": "149",
+            "Pratt	": "151",
+            "Rawlins	": "153",
+            "Reno	": "155",
+            "Republic	": "157",
+            "Rice	": "159",
+            "Riley	": "161",
+            "Rooks	": "163",
+            "Rush	": "165",
+            "Russell	": "167",
+            "Saline	": "169",
+            "Scott	": "171",
+            "Sedgwick	": "173",
+            "Seward	": "175",
+            "Shawnee	": "177",
+            "Sheridan	": "179",
+            "Sherman	": "181",
+            "Smith	": "183",
+            "Stafford	": "185",
+            "Stanton	": "187",
+            "Stevens	": "189",
+            "Sumner	": "191",
+            "Thomas	": "193",
+            "Trego	": "195",
+            "Wabaunsee	": "197",
+            "Wallace	": "199",
+            "Washington	": "201",
+            "Wichita	": "203",
+            "Wilson	": "205",
+            "Woodson	": "207",
+            "Wyandotte	": "209"
         }
     },
     "Kentucky"               :  {
@@ -929,7 +1131,126 @@ let stateNames = {
         survival : 79.09,
         creation : 3.71,
         counties : {
-            
+            "Adair	": "001",
+            "Allen	": "003",
+            "Anderson	": "005",
+            "Ballard	": "007",
+            "Barren	": "009",
+            "Bath	": "011",
+            "Bell	": "013",
+            "Boone	": "015",
+            "Bourbon	": "017",
+            "Boyd	": "019",
+            "Boyle	": "021",
+            "Bracken	": "023",
+            "Breathitt	": "025",
+            "Breckinridge	": "027",
+            "Bullitt	": "029",
+            "Butler	": "031",
+            "Caldwell	": "033",
+            "Calloway	": "035",
+            "Campbell	": "037",
+            "Carlisle	": "039",
+            "Carroll	": "041",
+            "Carter	": "043",
+            "Casey	": "045",
+            "Christian	": "047",
+            "Clark	": "049",
+            "Clay	": "051",
+            "Clinton	": "053",
+            "Crittenden	": "055",
+            "Cumberland	": "057",
+            "Daviess	": "059",
+            "Edmonson	": "061",
+            "Elliott	": "063",
+            "Estill	": "065",
+            "Fayette	": "067",
+            "Fleming	": "069",
+            "Floyd	": "071",
+            "Franklin	": "073",
+            "Fulton	": "075",
+            "Gallatin	": "077",
+            "Garrard	": "079",
+            "Grant	": "081",
+            "Graves	": "083",
+            "Grayson	": "085",
+            "Green	": "087",
+            "Greenup	": "089",
+            "Hancock	": "091",
+            "Hardin	": "093",
+            "Harlan	": "095",
+            "Harrison	": "097",
+            "Hart	": "099",
+            "Henderson	": "101",
+            "Henry	": "103",
+            "Hickman	": "105",
+            "Hopkins	": "107",
+            "Jackson	": "109",
+            "Jefferson	": "111",
+            "Jessamine	": "113",
+            "Johnson	": "115",
+            "Kenton	": "117",
+            "Knott	": "119",
+            "Knox	": "121",
+            "Larue	": "123",
+            "Laurel	": "125",
+            "Lawrence	": "127",
+            "Lee	": "129",
+            "Leslie	": "131",
+            "Letcher	": "133",
+            "Lewis	": "135",
+            "Lincoln	": "137",
+            "Livingston	": "139",
+            "Logan	": "141",
+            "Lyon	": "143",
+            "McCracken	": "145",
+            "McCreary	": "147",
+            "McLean	": "149",
+            "Madison	": "151",
+            "Magoffin	": "153",
+            "Marion	": "155",
+            "Marshall	": "157",
+            "Martin	": "159",
+            "Mason	": "161",
+            "Meade	": "163",
+            "Menifee	": "165",
+            "Mercer	": "167",
+            "Metcalfe	": "169",
+            "Monroe	": "171",
+            "Montgomery	": "173",
+            "Morgan	": "175",
+            "Muhlenberg	": "177",
+            "Nelson	": "179",
+            "Nicholas	": "181",
+            "Ohio	": "183",
+            "Oldham	": "185",
+            "Owen	": "187",
+            "Owsley	": "189",
+            "Pendleton	": "191",
+            "Perry	": "193",
+            "Pike	": "195",
+            "Powell	": "197",
+            "Pulaski	": "199",
+            "Robertson	": "201",
+            "Rockcastle	": "203",
+            "Rowan	": "205",
+            "Russell	": "207",
+            "Scott	": "209",
+            "Shelby	": "211",
+            "Simpson	": "213",
+            "Spencer	": "215",
+            "Taylor	": "217",
+            "Todd	": "219",
+            "Trigg	": "221",
+            "Trimble	": "223",
+            "Union	": "225",
+            "Warren	": "227",
+            "Washington	": "229",
+            "Wayne	": "231",
+            "Webster	": "233",
+            "Whitley	": "235",
+            "Wolfe	": "237",
+            "Woodford": "239"
         }
     },
     "Louisiana"              : {
@@ -938,7 +1259,70 @@ let stateNames = {
         survival : 81.08,
         creation : 4.26,
         counties : {
-            
+            "Acadia	": "001",
+            "Allen	": "003",
+            "Ascension	": "005",
+            "Assumption	": "007",
+            "Avoyelles	": "009",
+            "Beauregard	": "011",
+            "Bienville	": "013",
+            "Bossier	": "015",
+            "Caddo	": "017",
+            "Calcasieu	": "019",
+            "Caldwell	": "021",
+            "Cameron	": "023",
+            "Catahoula	": "025",
+            "Claiborne	": "027",
+            "Concordia	": "029",
+            "De Soto	": "031",
+            "East Baton Rouge	": "033",
+            "East Carroll	": "035",
+            "East Feliciana	": "037",
+            "Evangeline	": "039",
+            "Franklin	": "041",
+            "Grant	": "043",
+            "Iberia	": "045",
+            "Iberville	": "047",
+            "Jackson	": "049",
+            "Jefferson	": "051",
+            "Jefferson Davis	": "053",
+            "Lafayette	": "055",
+            "Lafourche	": "057",
+            "La Salle	": "059",
+            "Lincoln	": "061",
+            "Livingston	": "063",
+            "Madison	": "065",
+            "Morehouse	": "067",
+            "Natchitoches	": "069",
+            "Orleans	": "071",
+            "Ouachita	": "073",
+            "Plaquemines	": "075",
+            "Pointe Coupee	": "077",
+            "Rapides	": "079",
+            "Red River	": "081",
+            "Richland	": "083",
+            "Sabine	": "085",
+            "St Bernard	": "087",
+            "St Charles	": "089",
+            "St Helena	": "091",
+            "St James	": "093",
+            "St John the Baptist	": "095",
+            "St Landry	": "097",
+            "St Martin	": "099",
+            "St Mary	": "101",
+            "St Tammany	": "103",
+            "Tangipahoa	": "105",
+            "Tensas	": "107",
+            "Terrebonne	": "109",
+            "Union	": "111",
+            "Vermilion	": "113",
+            "Vernon	": "115",
+            "Washington	": "117",
+            "Webster	": "119",
+            "West Baton Rouge	": "121",
+            "West Carroll	": "123",
+            "West Feliciana	": "125",
+            "Winn": "127"
         }
     },
     "Maine"                  : {
@@ -947,7 +1331,22 @@ let stateNames = {
         survival : 78.82,
         creation : 4.58,
         counties : {
-            
+            "Androscoggin	": "001",
+            "Aroostook	": "003",
+            "Cumberland	": "005",
+            "Franklin	": "007",
+            "Hancock	": "009",
+            "Kennebec	": "011",
+            "Knox	": "013",
+            "Lincoln	": "015",
+            "Oxford	": "017",
+            "Penobscot	": "019",
+            "Piscataquis	": "021",
+            "Sagadahoc	": "023",
+            "Somerset	": "025",
+            "Waldo	": "027",
+            "Washington	": "029",
+            "York": "031"
         }
     },
     "Maryland"               :  {
@@ -956,7 +1355,30 @@ let stateNames = {
         survival : 76.65,
         creation : 4.01,
         counties : {
-            
+            "Allegany	": "001",
+            "Anne Arundel	": "003",
+            "Baltimore	": "005",
+            "Calvert	": "009",
+            "Caroline	": "011",
+            "Carroll	": "013",
+            "Cecil	": "015",
+            "Charles	": "017",
+            "Dorchester	": "019",
+            "Frederick	": "021",
+            "Garrett	": "023",
+            "Harford	": "025",
+            "Howard	": "027",
+            "Kent	": "029",
+            "Montgomery	": "031",
+            "Prince Georges	": "033",
+            "Queen Annes	": "035",
+            "St Marys	": "037",
+            "Somerset	": "039",
+            "Talbot	": "041",
+            "Washington	": "043",
+            "Wicomico	": "045",
+            "Worcester	": "047",
+            "Baltimore City": "510"
         }
     },
     "Massachusetts"          : {
@@ -965,7 +1387,20 @@ let stateNames = {
         survival : 80.53,
         creation : 5.13,
         counties : {
-            
+            "Barnstable	": "001",
+            "Berkshire	": "003",
+            "Bristol	": "005",
+            "Dukes	": "007",
+            "Essex	": "009",
+            "Franklin	": "011",
+            "Hampden	": "013",
+            "Hampshire	": "015",
+            "Middlesex	": "017",
+            "Nantucket	": "019",
+            "Norfolk	": "021",
+            "Plymouth	": "023",
+            "Suffolk	": "025",
+            "Worcester": "027"
         }
     },
     "Michigan"               : {
@@ -1355,1519 +1790,994 @@ function showOutput(res1, res2, res3, res4) {
 
 
 
-"Adams	": "001",
-"Allen	": "003",
-"Bartholomew	": "005",
-"Benton	": "007",
-"Blackford	": "009",
-"Boone	": "011",
-"Brown	": "013",
-"Carroll	": "015",
-"Cass	": "017",
-"Clark	": "019",
-"Clay	": "021",
-"Clinton	": "023",
-"Crawford	": "025",
-"Daviess	": "027",
-"Dearborn	": "029",
-"Decatur	": "031",
-"De Kalb	": "033",
-"Delaware	": "035",
-"Dubois	": "037",
-"Elkhart	": "039",
-"Fayette	": "041",
-"Floyd	": "043",
-"Fountain	": "045",
-"Franklin	": "047",
-"Fulton	": "049",
-"Gibson	": "051",
-"Grant	": "053",
-"Greene	": "055",
-"Hamilton	": "057",
-"Hancock	": "059",
-"Harrison	": "061",
-"Hendricks	": "063",
-"Henry	": "065",
-"Howard	": "067",
-"Huntington	": "069",
-"Jackson	": "071",
-"Jasper	": "073",
-"Jay	": "075",
-"Jefferson	": "077",
-"Jennings	": "079",
-"Johnson	": "081",
-"Knox	": "083",
-"Kosciusko	": "085",
-"La Grange	": "087",
-"Lake	": "089",
-"La Porte	": "091",
-"Lawrence	": "093",
-"Madison	": "095",
-"Marion	": "097",
-"Marshall	": "099",
-"Martin	": "101",
-"Miami	": "103",
-"Monroe	": "105",
-"Montgomery	": "107",
-"Morgan	": "109",
-"Newton	": "111",
-"Noble	": "113",
-"Ohio	": "115",
-"Orange	": "117",
-"Owen	": "119",
-"Parke	": "121",
-"Perry	": "123",
-"Pike	": "125",
-"Porter	": "127",
-"Posey	": "129",
-"Pulaski	": "131",
-"Putnam	": "133",
-"Randolph	": "135",
-"Ripley	": "137",
-"Rush	": "139",
-"St Joseph	": "141",
-"Scott	": "143",
-"Shelby	": "145",
-"Spencer	": "147",
-"Starke	": "149",
-"Steuben	": "151",
-"Sullivan	": "153",
-"Switzerland	": "155",
-"Tippecanoe	": "157",
-"Tipton	": "159",
-"Union	": "161",
-"Vanderburgh	": "163",
-"Vermillion	": "165",
-"Vigo	": "167",
-"Wabash	": "169",
-"Warren	": "171",
-"Warrick	": "173",
-"Washington	": "175",
-"Wayne	": "177",
-"Wells	": "179",
-"White	": "181",
-"Whitley	": "183",
 
-19001	Adair	
-19003	Adams	
-19005	Allamakee	
-19007	Appanoose	IA
-19009	Audubon	IA
-19011	Benton	IA
-19013	Black Hawk	IA
-19015	Boone	IA
-19017	Bremer	IA
-19019	Buchanan	IA
-19021	Buena Vista	IA
-19023	Butler	IA
-19025	Calhoun	IA
-19027	Carroll	IA
-19029	Cass	IA
-19031	Cedar	IA
-19033	Cerro Gordo	IA
-19035	Cherokee	IA
-19037	Chickasaw	IA
-19039	Clarke	IA
-19041	Clay	IA
-19043	Clayton	IA
-19045	Clinton	IA
-19047	Crawford	IA
-19049	Dallas	IA
-19051	Davis	IA
-19053	Decatur	IA
-19055	Delaware	IA
-19057	Des Moines	IA
-19059	Dickinson	IA
-19061	Dubuque	IA
-19063	Emmet	IA
-19065	Fayette	IA
-19067	Floyd	IA
-19069	Franklin	IA
-19071	Fremont	IA
-19073	Greene	IA
-19075	Grundy	IA
-19077	Guthrie	IA
-19079	Hamilton	IA
-19081	Hancock	IA
-19083	Hardin	IA
-19085	Harrison	IA
-19087	Henry	IA
-19089	Howard	IA
-19091	Humboldt	IA
-19093	Ida	IA
-19095	Iowa	IA
-19097	Jackson	IA
-19099	Jasper	IA
-19101	Jefferson	IA
-19103	Johnson	IA
-19105	Jones	IA
-19107	Keokuk	IA
-19109	Kossuth	IA
-19111	Lee	IA
-19113	Linn	IA
-19115	Louisa	IA
-19117	Lucas	IA
-19119	Lyon	IA
-19121	Madison	IA
-19123	Mahaska	IA
-19125	Marion	IA
-19127	Marshall	IA
-19129	Mills	IA
-19131	Mitchell	IA
-19133	Monona	IA
-19135	Monroe	IA
-19137	Montgomery	IA
-19139	Muscatine	IA
-19141	O Brien	IA
-19143	Osceola	IA
-19145	Page	IA
-19147	Palo Alto	IA
-19149	Plymouth	IA
-19151	Pocahontas	IA
-19153	Polk	IA
-19155	Pottawattamie	IA
-19157	Poweshiek	IA
-19159	Ringgold	IA
-19161	Sac	IA
-19163	Scott	IA
-19165	Shelby	IA
-19167	Sioux	IA
-19169	Story	IA
-19171	Tama	IA
-19173	Taylor	IA
-19175	Union	IA
-19177	Van Buren	IA
-19179	Wapello	IA
-19181	Warren	IA
-19183	Washington	IA
-19185	Wayne	IA
-19187	Webster	IA
-19189	Winnebago	IA
-19191	Winneshiek	IA
-19193	Woodbury	IA
-19195	Worth	IA
-19197	Wright	IA
-20001	Allen	KS
-20003	Anderson	KS
-20005	Atchison	KS
-20007	Barber	KS
-20009	Barton	KS
-20011	Bourbon	KS
-20013	Brown	KS
-20015	Butler	KS
-20017	Chase	KS
-20019	Chautauqua	KS
-20021	Cherokee	KS
-20023	Cheyenne	KS
-20025	Clark	KS
-20027	Clay	KS
-20029	Cloud	KS
-20031	Coffey	KS
-20033	Comanche	KS
-20035	Cowley	KS
-20037	Crawford	KS
-20039	Decatur	KS
-20041	Dickinson	KS
-20043	Doniphan	KS
-20045	Douglas	KS
-20047	Edwards	KS
-20049	Elk	KS
-20051	Ellis	KS
-20053	Ellsworth	KS
-20055	Finney	KS
-20057	Ford	KS
-20059	Franklin	KS
-20061	Geary	KS
-20063	Gove	KS
-20065	Graham	KS
-20067	Grant	KS
-20069	Gray	KS
-20071	Greeley	KS
-20073	Greenwood	KS
-20075	Hamilton	KS
-20077	Harper	KS
-20079	Harvey	KS
-20081	Haskell	KS
-20083	Hodgeman	KS
-20085	Jackson	KS
-20087	Jefferson	KS
-20089	Jewell	KS
-20091	Johnson	KS
-20093	Kearny	KS
-20095	Kingman	KS
-20097	Kiowa	KS
-20099	Labette	KS
-20101	Lane	KS
-20103	Leavenworth	KS
-20105	Lincoln	KS
-20107	Linn	KS
-20109	Logan	KS
-20111	Lyon	KS
-20113	McPherson	KS
-20115	Marion	KS
-20117	Marshall	KS
-20119	Meade	KS
-20121	Miami	KS
-20123	Mitchell	KS
-20125	Montgomery	KS
-20127	Morris	KS
-20129	Morton	KS
-20131	Nemaha	KS
-20133	Neosho	KS
-20135	Ness	KS
-20137	Norton	KS
-20139	Osage	KS
-20141	Osborne	KS
-20143	Ottawa	KS
-20145	Pawnee	KS
-20147	Phillips	KS
-20149	Pottawatomie	KS
-20151	Pratt	KS
-20153	Rawlins	KS
-20155	Reno	KS
-20157	Republic	KS
-20159	Rice	KS
-20161	Riley	KS
-20163	Rooks	KS
-20165	Rush	KS
-20167	Russell	KS
-20169	Saline	KS
-20171	Scott	KS
-20173	Sedgwick	KS
-20175	Seward	KS
-20177	Shawnee	KS
-20179	Sheridan	KS
-20181	Sherman	KS
-20183	Smith	KS
-20185	Stafford	KS
-20187	Stanton	KS
-20189	Stevens	KS
-20191	Sumner	KS
-20193	Thomas	KS
-20195	Trego	KS
-20197	Wabaunsee	KS
-20199	Wallace	KS
-20201	Washington	KS
-20203	Wichita	KS
-20205	Wilson	KS
-20207	Woodson	KS
-20209	Wyandotte	KS
-21001	Adair	KY
-21003	Allen	KY
-21005	Anderson	KY
-21007	Ballard	KY
-21009	Barren	KY
-21011	Bath	KY
-21013	Bell	KY
-21015	Boone	KY
-21017	Bourbon	KY
-21019	Boyd	KY
-21021	Boyle	KY
-21023	Bracken	KY
-21025	Breathitt	KY
-21027	Breckinridge	KY
-21029	Bullitt	KY
-21031	Butler	KY
-21033	Caldwell	KY
-21035	Calloway	KY
-21037	Campbell	KY
-21039	Carlisle	KY
-21041	Carroll	KY
-21043	Carter	KY
-21045	Casey	KY
-21047	Christian	KY
-21049	Clark	KY
-21051	Clay	KY
-21053	Clinton	KY
-21055	Crittenden	KY
-21057	Cumberland	KY
-21059	Daviess	KY
-21061	Edmonson	KY
-21063	Elliott	KY
-21065	Estill	KY
-21067	Fayette	KY
-21069	Fleming	KY
-21071	Floyd	KY
-21073	Franklin	KY
-21075	Fulton	KY
-21077	Gallatin	KY
-21079	Garrard	KY
-21081	Grant	KY
-21083	Graves	KY
-21085	Grayson	KY
-21087	Green	KY
-21089	Greenup	KY
-21091	Hancock	KY
-21093	Hardin	KY
-21095	Harlan	KY
-21097	Harrison	KY
-21099	Hart	KY
-21101	Henderson	KY
-21103	Henry	KY
-21105	Hickman	KY
-21107	Hopkins	KY
-21109	Jackson	KY
-21111	Jefferson	KY
-21113	Jessamine	KY
-21115	Johnson	KY
-21117	Kenton	KY
-21119	Knott	KY
-21121	Knox	KY
-21123	Larue	KY
-21125	Laurel	KY
-21127	Lawrence	KY
-21129	Lee	KY
-21131	Leslie	KY
-21133	Letcher	KY
-21135	Lewis	KY
-21137	Lincoln	KY
-21139	Livingston	KY
-21141	Logan	KY
-21143	Lyon	KY
-21145	McCracken	KY
-21147	McCreary	KY
-21149	McLean	KY
-21151	Madison	KY
-21153	Magoffin	KY
-21155	Marion	KY
-21157	Marshall	KY
-21159	Martin	KY
-21161	Mason	KY
-21163	Meade	KY
-21165	Menifee	KY
-21167	Mercer	KY
-21169	Metcalfe	KY
-21171	Monroe	KY
-21173	Montgomery	KY
-21175	Morgan	KY
-21177	Muhlenberg	KY
-21179	Nelson	KY
-21181	Nicholas	KY
-21183	Ohio	KY
-21185	Oldham	KY
-21187	Owen	KY
-21189	Owsley	KY
-21191	Pendleton	KY
-21193	Perry	KY
-21195	Pike	KY
-21197	Powell	KY
-21199	Pulaski	KY
-21201	Robertson	KY
-21203	Rockcastle	KY
-21205	Rowan	KY
-21207	Russell	KY
-21209	Scott	KY
-21211	Shelby	KY
-21213	Simpson	KY
-21215	Spencer	KY
-21217	Taylor	KY
-21219	Todd	KY
-21221	Trigg	KY
-21223	Trimble	KY
-21225	Union	KY
-21227	Warren	KY
-21229	Washington	KY
-21231	Wayne	KY
-21233	Webster	KY
-21235	Whitley	KY
-21237	Wolfe	KY
-21239	Woodford	KY
-22001	Acadia	LA
-22003	Allen	LA
-22005	Ascension	LA
-22007	Assumption	LA
-22009	Avoyelles	LA
-22011	Beauregard	LA
-22013	Bienville	LA
-22015	Bossier	LA
-22017	Caddo	LA
-22019	Calcasieu	LA
-22021	Caldwell	LA
-22023	Cameron	LA
-22025	Catahoula	LA
-22027	Claiborne	LA
-22029	Concordia	LA
-22031	De Soto	LA
-22033	East Baton Rouge	LA
-22035	East Carroll	LA
-22037	East Feliciana	LA
-22039	Evangeline	LA
-22041	Franklin	LA
-22043	Grant	LA
-22045	Iberia	LA
-22047	Iberville	LA
-22049	Jackson	LA
-22051	Jefferson	LA
-22053	Jefferson Davis	LA
-22055	Lafayette	LA
-22057	Lafourche	LA
-22059	La Salle	LA
-22061	Lincoln	LA
-22063	Livingston	LA
-22065	Madison	LA
-22067	Morehouse	LA
-22069	Natchitoches	LA
-22071	Orleans	LA
-22073	Ouachita	LA
-22075	Plaquemines	LA
-22077	Pointe Coupee	LA
-22079	Rapides	LA
-22081	Red River	LA
-22083	Richland	LA
-22085	Sabine	LA
-22087	St Bernard	LA
-22089	St Charles	LA
-22091	St Helena	LA
-22093	St James	LA
-22095	St John the Baptist	LA
-22097	St Landry	LA
-22099	St Martin	LA
-22101	St Mary	LA
-22103	St Tammany	LA
-22105	Tangipahoa	LA
-22107	Tensas	LA
-22109	Terrebonne	LA
-22111	Union	LA
-22113	Vermilion	LA
-22115	Vernon	LA
-22117	Washington	LA
-22119	Webster	LA
-22121	West Baton Rouge	LA
-22123	West Carroll	LA
-22125	West Feliciana	LA
-22127	Winn	LA
-23001	Androscoggin	ME
-23003	Aroostook	ME
-23005	Cumberland	ME
-23007	Franklin	ME
-23009	Hancock	ME
-23011	Kennebec	ME
-23013	Knox	ME
-23015	Lincoln	ME
-23017	Oxford	ME
-23019	Penobscot	ME
-23021	Piscataquis	ME
-23023	Sagadahoc	ME
-23025	Somerset	ME
-23027	Waldo	ME
-23029	Washington	ME
-23031	York	ME
-24001	Allegany	MD
-24003	Anne Arundel	MD
-24005	Baltimore	MD
-24009	Calvert	MD
-24011	Caroline	MD
-24013	Carroll	MD
-24015	Cecil	MD
-24017	Charles	MD
-24019	Dorchester	MD
-24021	Frederick	MD
-24023	Garrett	MD
-24025	Harford	MD
-24027	Howard	MD
-24029	Kent	MD
-24031	Montgomery	MD
-24033	Prince Georges	MD
-24035	Queen Annes	MD
-24037	St Marys	MD
-24039	Somerset	MD
-24041	Talbot	MD
-24043	Washington	MD
-24045	Wicomico	MD
-24047	Worcester	MD
-24510	Baltimore City	MD
-25001	Barnstable	MA
-25003	Berkshire	MA
-25005	Bristol	MA
-25007	Dukes	MA
-25009	Essex	MA
-25011	Franklin	MA
-25013	Hampden	MA
-25015	Hampshire	MA
-25017	Middlesex	MA
-25019	Nantucket	MA
-25021	Norfolk	MA
-25023	Plymouth	MA
-25025	Suffolk	MA
-25027	Worcester	MA
-26001	Alcona	MI
-26003	Alger	MI
-26005	Allegan	MI
-26007	Alpena	MI
-26009	Antrim	MI
-26011	Arenac	MI
-26013	Baraga	MI
-26015	Barry	MI
-26017	Bay	MI
-26019	Benzie	MI
-26021	Berrien	MI
-26023	Branch	MI
-26025	Calhoun	MI
-26027	Cass	MI
-26029	Charlevoix	MI
-26031	Cheboygan	MI
-26033	Chippewa	MI
-26035	Clare	MI
-26037	Clinton	MI
-26039	Crawford	MI
-26041	Delta	MI
-26043	Dickinson	MI
-26045	Eaton	MI
-26047	Emmet	MI
-26049	Genesee	MI
-26051	Gladwin	MI
-26053	Gogebic	MI
-26055	Grand Traverse	MI
-26057	Gratiot	MI
-26059	Hillsdale	MI
-26061	Houghton	MI
-26063	Huron	MI
-26065	Ingham	MI
-26067	Ionia	MI
-26069	Iosco	MI
-26071	Iron	MI
-26073	Isabella	MI
-26075	Jackson	MI
-26077	Kalamazoo	MI
-26079	Kalkaska	MI
-26081	Kent	MI
-26083	Keweenaw	MI
-26085	Lake	MI
-26087	Lapeer	MI
-26089	Leelanau	MI
-26091	Lenawee	MI
-26093	Livingston	MI
-26095	Luce	MI
-26097	Mackinac	MI
-26099	Macomb	MI
-26101	Manistee	MI
-26103	Marquette	MI
-26105	Mason	MI
-26107	Mecosta	MI
-26109	Menominee	MI
-26111	Midland	MI
-26113	Missaukee	MI
-26115	Monroe	MI
-26117	Montcalm	MI
-26119	Montmorency	MI
-26121	Muskegon	MI
-26123	Newaygo	MI
-26125	Oakland	MI
-26127	Oceana	MI
-26129	Ogemaw	MI
-26131	Ontonagon	MI
-26133	Osceola	MI
-26135	Oscoda	MI
-26137	Otsego	MI
-26139	Ottawa	MI
-26141	Presque Isle	MI
-26143	Roscommon	MI
-26145	Saginaw	MI
-26147	St Clair	MI
-26149	St Joseph	MI
-26151	Sanilac	MI
-26153	Schoolcraft	MI
-26155	Shiawassee	MI
-26157	Tuscola	MI
-26159	Van Buren	MI
-26161	Washtenaw	MI
-26163	Wayne	MI
-26165	Wexford	MI
-27001	Aitkin	MN
-27003	Anoka	MN
-27005	Becker	MN
-27007	Beltrami	MN
-27009	Benton	MN
-27011	Big Stone	MN
-27013	Blue Earth	MN
-27015	Brown	MN
-27017	Carlton	MN
-27019	Carver	MN
-27021	Cass	MN
-27023	Chippewa	MN
-27025	Chisago	MN
-27027	Clay	MN
-27029	Clearwater	MN
-27031	Cook	MN
-27033	Cottonwood	MN
-27035	Crow Wing	MN
-27037	Dakota	MN
-27039	Dodge	MN
-27041	Douglas	MN
-27043	Faribault	MN
-27045	Fillmore	MN
-27047	Freeborn	MN
-27049	Goodhue	MN
-27051	Grant	MN
-27053	Hennepin	MN
-27055	Houston	MN
-27057	Hubbard	MN
-27059	Isanti	MN
-27061	Itasca	MN
-27063	Jackson	MN
-27065	Kanabec	MN
-27067	Kandiyohi	MN
-27069	Kittson	MN
-27071	Koochiching	MN
-27073	Lac qui Parle	MN
-27075	Lake	MN
-27077	Lake of the Woods	MN
-27079	Le Sueur	MN
-27081	Lincoln	MN
-27083	Lyon	MN
-27085	McLeod	MN
-27087	Mahnomen	MN
-27089	Marshall	MN
-27091	Martin	MN
-27093	Meeker	MN
-27095	Mille Lacs	MN
-27097	Morrison	MN
-27099	Mower	MN
-27101	Murray	MN
-27103	Nicollet	MN
-27105	Nobles	MN
-27107	Norman	MN
-27109	Olmsted	MN
-27111	Otter Tail	MN
-27113	Pennington	MN
-27115	Pine	MN
-27117	Pipestone	MN
-27119	Polk	MN
-27121	Pope	MN
-27123	Ramsey	MN
-27125	Red Lake	MN
-27127	Redwood	MN
-27129	Renville	MN
-27131	Rice	MN
-27133	Rock	MN
-27135	Roseau	MN
-27137	St Louis	MN
-27139	Scott	MN
-27141	Sherburne	MN
-27143	Sibley	MN
-27145	Stearns	MN
-27147	Steele	MN
-27149	Stevens	MN
-27151	Swift	MN
-27153	Todd	MN
-27155	Traverse	MN
-27157	Wabasha	MN
-27159	Wadena	MN
-27161	Waseca	MN
-27163	Washington	MN
-27165	Watonwan	MN
-27167	Wilkin	MN
-27169	Winona	MN
-27171	Wright	MN
-27173	Yellow Medicine	MN
-28001	Adams	MS
-28003	Alcorn	MS
-28005	Amite	MS
-28007	Attala	MS
-28009	Benton	MS
-28011	Bolivar	MS
-28013	Calhoun	MS
-28015	Carroll	MS
-28017	Chickasaw	MS
-28019	Choctaw	MS
-28021	Claiborne	MS
-28023	Clarke	MS
-28025	Clay	MS
-28027	Coahoma	MS
-28029	Copiah	MS
-28031	Covington	MS
-28033	De Soto	MS
-28035	Forrest	MS
-28037	Franklin	MS
-28039	George	MS
-28041	Greene	MS
-28043	Grenada	MS
-28045	Hancock	MS
-28047	Harrison	MS
-28049	Hinds	MS
-28051	Holmes	MS
-28053	Humphreys	MS
-28055	Issaquena	MS
-28057	Itawamba	MS
-28059	Jackson	MS
-28061	Jasper	MS
-28063	Jefferson	MS
-28065	Jefferson Davis	MS
-28067	Jones	MS
-28069	Kemper	MS
-28071	Lafayette	MS
-28073	Lamar	MS
-28075	Lauderdale	MS
-28077	Lawrence	MS
-28079	Leake	MS
-28081	Lee	MS
-28083	Leflore	MS
-28085	Lincoln	MS
-28087	Lowndes	MS
-28089	Madison	MS
-28091	Marion	MS
-28093	Marshall	MS
-28095	Monroe	MS
-28097	Montgomery	MS
-28099	Neshoba	MS
-28101	Newton	MS
-28103	Noxubee	MS
-28105	Oktibbeha	MS
-28107	Panola	MS
-28109	Pearl River	MS
-28111	Perry	MS
-28113	Pike	MS
-28115	Pontotoc	MS
-28117	Prentiss	MS
-28119	Quitman	MS
-28121	Rankin	MS
-28123	Scott	MS
-28125	Sharkey	MS
-28127	Simpson	MS
-28129	Smith	MS
-28131	Stone	MS
-28133	Sunflower	MS
-28135	Tallahatchie	MS
-28137	Tate	MS
-28139	Tippah	MS
-28141	Tishomingo	MS
-28143	Tunica	MS
-28145	Union	MS
-28147	Walthall	MS
-28149	Warren	MS
-28151	Washington	MS
-28153	Wayne	MS
-28155	Webster	MS
-28157	Wilkinson	MS
-28159	Winston	MS
-28161	Yalobusha	MS
-28163	Yazoo	MS
-29001	Adair	MO
-29003	Andrew	MO
-29005	Atchison	MO
-29007	Audrain	MO
-29009	Barry	MO
-29011	Barton	MO
-29013	Bates	MO
-29015	Benton	MO
-29017	Bollinger	MO
-29019	Boone	MO
-29021	Buchanan	MO
-29023	Butler	MO
-29025	Caldwell	MO
-29027	Callaway	MO
-29029	Camden	MO
-29031	Cape Girardeau	MO
-29033	Carroll	MO
-29035	Carter	MO
-29037	Cass	MO
-29039	Cedar	MO
-29041	Chariton	MO
-29043	Christian	MO
-29045	Clark	MO
-29047	Clay	MO
-29049	Clinton	MO
-29051	Cole	MO
-29053	Cooper	MO
-29055	Crawford	MO
-29057	Dade	MO
-29059	Dallas	MO
-29061	Daviess	MO
-29063	De Kalb	MO
-29065	Dent	MO
-29067	Douglas	MO
-29069	Dunklin	MO
-29071	Franklin	MO
-29073	Gasconade	MO
-29075	Gentry	MO
-29077	Greene	MO
-29079	Grundy	MO
-29081	Harrison	MO
-29083	Henry	MO
-29085	Hickory	MO
-29087	Holt	MO
-29089	Howard	MO
-29091	Howell	MO
-29093	Iron	MO
-29095	Jackson	MO
-29097	Jasper	MO
-29099	Jefferson	MO
-29101	Johnson	MO
-29103	Knox	MO
-29105	Laclede	MO
-29107	Lafayette	MO
-29109	Lawrence	MO
-29111	Lewis	MO
-29113	Lincoln	MO
-29115	Linn	MO
-29117	Livingston	MO
-29119	McDonald	MO
-29121	Macon	MO
-29123	Madison	MO
-29125	Maries	MO
-29127	Marion	MO
-29129	Mercer	MO
-29131	Miller	MO
-29133	Mississippi	MO
-29135	Moniteau	MO
-29137	Monroe	MO
-29139	Montgomery	MO
-29141	Morgan	MO
-29143	New Madrid	MO
-29145	Newton	MO
-29147	Nodaway	MO
-29149	Oregon	MO
-29151	Osage	MO
-29153	Ozark	MO
-29155	Pemiscot	MO
-29157	Perry	MO
-29159	Pettis	MO
-29161	Phelps	MO
-29163	Pike	MO
-29165	Platte	MO
-29167	Polk	MO
-29169	Pulaski	MO
-29171	Putnam	MO
-29173	Ralls	MO
-29175	Randolph	MO
-29177	Ray	MO
-29179	Reynolds	MO
-29181	Ripley	MO
-29183	St Charles	MO
-29185	St Clair	MO
-29186	Ste. Genevieve	MO
-29187	St Francois	MO
-29189	St Louis	MO
-29195	Saline	MO
-29197	Schuyler	MO
-29199	Scotland	MO
-29201	Scott	MO
-29203	Shannon	MO
-29205	Shelby	MO
-29207	Stoddard	MO
-29209	Stone	MO
-29211	Sullivan	MO
-29213	Taney	MO
-29215	Texas	MO
-29217	Vernon	MO
-29219	Warren	MO
-29221	Washington	MO
-29223	Wayne	MO
-29225	Webster	MO
-29227	Worth	MO
-29229	Wright	MO
-29510	St Louis City	MO
-30001	Beaverhead	MT
-30003	Big Horn	MT
-30005	Blaine	MT
-30007	Broadwater	MT
-30009	Carbon	MT
-30011	Carter	MT
-30013	Cascade	MT
-30015	Chouteau	MT
-30017	Custer	MT
-30019	Daniels	MT
-30021	Dawson	MT
-30023	Deer Lodge	MT
-30025	Fallon	MT
-30027	Fergus	MT
-30029	Flathead	MT
-30031	Gallatin	MT
-30033	Garfield	MT
-30035	Glacier	MT
-30037	Golden Valley	MT
-30039	Granite	MT
-30041	Hill	MT
-30043	Jefferson	MT
-30045	Judith Basin	MT
-30047	Lake	MT
-30049	Lewis and Clark	MT
-30051	Liberty	MT
-30053	Lincoln	MT
-30055	McCone	MT
-30057	Madison	MT
-30059	Meagher	MT
-30061	Mineral	MT
-30063	Missoula	MT
-30065	Musselshell	MT
-30067	Park	MT
-30069	Petroleum	MT
-30071	Phillips	MT
-30073	Pondera	MT
-30075	Powder River	MT
-30077	Powell	MT
-30079	Prairie	MT
-30081	Ravalli	MT
-30083	Richland	MT
-30085	Roosevelt	MT
-30087	Rosebud	MT
-30089	Sanders	MT
-30091	Sheridan	MT
-30093	Silver Bow	MT
-30095	Stillwater	MT
-30097	Sweet Grass	MT
-30099	Teton	MT
-30101	Toole	MT
-30103	Treasure	MT
-30105	Valley	MT
-30107	Wheatland	MT
-30109	Wibaux	MT
-30111	Yellowstone	MT
-30113	Yellowstone Nat Park	MT
-31001	Adams	NE
-31003	Antelope	NE
-31005	Arthur	NE
-31007	Banner	NE
-31009	Blaine	NE
-31011	Boone	NE
-31013	Box Butte	NE
-31015	Boyd	NE
-31017	Brown	NE
-31019	Buffalo	NE
-31021	Burt	NE
-31023	Butler	NE
-31025	Cass	NE
-31027	Cedar	NE
-31029	Chase	NE
-31031	Cherry	NE
-31033	Cheyenne	NE
-31035	Clay	NE
-31037	Colfax	NE
-31039	Cuming	NE
-31041	Custer	NE
-31043	Dakota	NE
-31045	Dawes	NE
-31047	Dawson	NE
-31049	Deuel	NE
-31051	Dixon	NE
-31053	Dodge	NE
-31055	Douglas	NE
-31057	Dundy	NE
-31059	Fillmore	NE
-31061	Franklin	NE
-31063	Frontier	NE
-31065	Furnas	NE
-31067	Gage	NE
-31069	Garden	NE
-31071	Garfield	NE
-31073	Gosper	NE
-31075	Grant	NE
-31077	Greeley	NE
-31079	Hall	NE
-31081	Hamilton	NE
-31083	Harlan	NE
-31085	Hayes	NE
-31087	Hitchcock	NE
-31089	Holt	NE
-31091	Hooker	NE
-31093	Howard	NE
-31095	Jefferson	NE
-31097	Johnson	NE
-31099	Kearney	NE
-31101	Keith	NE
-31103	Keya Paha	NE
-31105	Kimball	NE
-31107	Knox	NE
-31109	Lancaster	NE
-31111	Lincoln	NE
-31113	Logan	NE
-31115	Loup	NE
-31117	McPherson	NE
-31119	Madison	NE
-31121	Merrick	NE
-31123	Morrill	NE
-31125	Nance	NE
-31127	Nemaha	NE
-31129	Nuckolls	NE
-31131	Otoe	NE
-31133	Pawnee	NE
-31135	Perkins	NE
-31137	Phelps	NE
-31139	Pierce	NE
-31141	Platte	NE
-31143	Polk	NE
-31145	Red Willow	NE
-31147	Richardson	NE
-31149	Rock	NE
-31151	Saline	NE
-31153	Sarpy	NE
-31155	Saunders	NE
-31157	Scotts Bluff	NE
-31159	Seward	NE
-31161	Sheridan	NE
-31163	Sherman	NE
-31165	Sioux	NE
-31167	Stanton	NE
-31169	Thayer	NE
-31171	Thomas	NE
-31173	Thurston	NE
-31175	Valley	NE
-31177	Washington	NE
-31179	Wayne	NE
-31181	Webster	NE
-31183	Wheeler	NE
-31185	York	NE
-32001	Churchill	NV
-32003	Clark	NV
-32005	Douglas	NV
-32007	Elko	NV
-32009	Esmeralda	NV
-32011	Eureka	NV
-32013	Humboldt	NV
-32015	Lander	NV
-32017	Lincoln	NV
-32019	Lyon	NV
-32021	Mineral	NV
-32023	Nye	NV
-32027	Pershing	NV
-32029	Storey	NV
-32031	Washoe	NV
-32033	White Pine	NV
-32510	Carson City	NV
-33001	Belknap	NH
-33003	Carroll	NH
-33005	Cheshire	NH
-33007	Coos	NH
-33009	Grafton	NH
-33011	Hillsborough	NH
-33013	Merrimack	NH
-33015	Rockingham	NH
-33017	Strafford	NH
-33019	Sullivan	NH
-34001	Atlantic	NJ
-34003	Bergen	NJ
-34005	Burlington	NJ
-34007	Camden	NJ
-34009	Cape May	NJ
-34011	Cumberland	NJ
-34013	Essex	NJ
-34015	Gloucester	NJ
-34017	Hudson	NJ
-34019	Hunterdon	NJ
-34021	Mercer	NJ
-34023	Middlesex	NJ
-34025	Monmouth	NJ
-34027	Morris	NJ
-34029	Ocean	NJ
-34031	Passaic	NJ
-34033	Salem	NJ
-34035	Somerset	NJ
-34037	Sussex	NJ
-34039	Union	NJ
-34041	Warren	NJ
-35001	Bernalillo	NM
-35003	Catron	NM
-35005	Chaves	NM
-35006	Cibola	NM
-35007	Colfax	NM
-35009	Curry	NM
-35011	De Baca	NM
-35013	Dona Ana	NM
-35015	Eddy	NM
-35017	Grant	NM
-35019	Guadalupe	NM
-35021	Harding	NM
-35023	Hidalgo	NM
-35025	Lea	NM
-35027	Lincoln	NM
-35028	Los Alamos	NM
-35029	Luna	NM
-35031	McKinley	NM
-35033	Mora	NM
-35035	Otero	NM
-35037	Quay	NM
-35039	Rio Arriba	NM
-35041	Roosevelt	NM
-35043	Sandoval	NM
-35045	San Juan	NM
-35047	San Miguel	NM
-35049	Santa Fe	NM
-35051	Sierra	NM
-35053	Socorro	NM
-35055	Taos	NM
-35057	Torrance	NM
-35059	Union	NM
-35061	Valencia	NM
-36001	Albany	NY
-36003	Allegany	NY
-36005	Bronx	NY
-36007	Broome	NY
-36009	Cattaraugus	NY
-36011	Cayuga	NY
-36013	Chautauqua	NY
-36015	Chemung	NY
-36017	Chenango	NY
-36019	Clinton	NY
-36021	Columbia	NY
-36023	Cortland	NY
-36025	Delaware	NY
-36027	Dutchess	NY
-36029	Erie	NY
-36031	Essex	NY
-36033	Franklin	NY
-36035	Fulton	NY
-36037	Genesee	NY
-36039	Greene	NY
-36041	Hamilton	NY
-36043	Herkimer	NY
-36045	Jefferson	NY
-36047	Kings	NY
-36049	Lewis	NY
-36051	Livingston	NY
-36053	Madison	NY
-36055	Monroe	NY
-36057	Montgomery	NY
-36059	Nassau	NY
-36061	New York	NY
-36063	Niagara	NY
-36065	Oneida	NY
-36067	Onondaga	NY
-36069	Ontario	NY
-36071	Orange	NY
-36073	Orleans	NY
-36075	Oswego	NY
-36077	Otsego	NY
-36079	Putnam	NY
-36081	Queens	NY
-36083	Rensselaer	NY
-36085	Richmond	NY
-36087	Rockland	NY
-36089	St Lawrence	NY
-36091	Saratoga	NY
-36093	Schenectady	NY
-36095	Schoharie	NY
-36097	Schuyler	NY
-36099	Seneca	NY
-36101	Steuben	NY
-36103	Suffolk	NY
-36105	Sullivan	NY
-36107	Tioga	NY
-36109	Tompkins	NY
-36111	Ulster	NY
-36113	Warren	NY
-36115	Washington	NY
-36117	Wayne	NY
-36119	Westchester	NY
-36121	Wyoming	NY
-36123	Yates	NY
-37001	Alamance	NC
-37003	Alexander	NC
-37005	Alleghany	NC
-37007	Anson	NC
-37009	Ashe	NC
-37011	Avery	NC
-37013	Beaufort	NC
-37015	Bertie	NC
-37017	Bladen	NC
-37019	Brunswick	NC
-37021	Buncombe	NC
-37023	Burke	NC
-37025	Cabarrus	NC
-37027	Caldwell	NC
-37029	Camden	NC
-37031	Carteret	NC
-37033	Caswell	NC
-37035	Catawba	NC
-37037	Chatham	NC
-37039	Cherokee	NC
-37041	Chowan	NC
-37043	Clay	NC
-37045	Cleveland	NC
-37047	Columbus	NC
-37049	Craven	NC
-37051	Cumberland	NC
-37053	Currituck	NC
-37055	Dare	NC
-37057	Davidson	NC
-37059	Davie	NC
-37061	Duplin	NC
-37063	Durham	NC
-37065	Edgecombe	NC
-37067	Forsyth	NC
-37069	Franklin	NC
-37071	Gaston	NC
-37073	Gates	NC
-37075	Graham	NC
-37077	Granville	NC
-37079	Greene	NC
-37081	Guilford	NC
-37083	Halifax	NC
-37085	Harnett	NC
-37087	Haywood	NC
-37089	Henderson	NC
-37091	Hertford	NC
-37093	Hoke	NC
-37095	Hyde	NC
-37097	Iredell	NC
-37099	Jackson	NC
-37101	Johnston	NC
-37103	Jones	NC
-37105	Lee	NC
-37107	Lenoir	NC
-37109	Lincoln	NC
-37111	McDowell	NC
-37113	Macon	NC
-37115	Madison	NC
-37117	Martin	NC
-37119	Mecklenburg	NC
-37121	Mitchell	NC
-37123	Montgomery	NC
-37125	Moore	NC
-37127	Nash	NC
-37129	New Hanover	NC
-37131	Northampton	NC
-37133	Onslow	NC
-37135	Orange	NC
-37137	Pamlico	NC
-37139	Pasquotank	NC
-37141	Pender	NC
-37143	Perquimans	NC
-37145	Person	NC
-37147	Pitt	NC
-37149	Polk	NC
-37151	Randolph	NC
-37153	Richmond	NC
-37155	Robeson	NC
-37157	Rockingham	NC
-37159	Rowan	NC
-37161	Rutherford	NC
-37163	Sampson	NC
-37165	Scotland	NC
-37167	Stanly	NC
-37169	Stokes	NC
-37171	Surry	NC
-37173	Swain	NC
-37175	Transylvania	NC
-37177	Tyrrell	NC
-37179	Union	NC
-37181	Vance	NC
-37183	Wake	NC
-37185	Warren	NC
-37187	Washington	NC
-37189	Watauga	NC
-37191	Wayne	NC
-37193	Wilkes	NC
-37195	Wilson	NC
-37197	Yadkin	NC
-37199	Yancey	NC
-38001	Adams	ND
-38003	Barnes	ND
-38005	Benson	ND
-38007	Billings	ND
-38009	Bottineau	ND
-38011	Bowman	ND
-38013	Burke	ND
-38015	Burleigh	ND
-38017	Cass	ND
-38019	Cavalier	ND
-38021	Dickey	ND
-38023	Divide	ND
-38025	Dunn	ND
-38027	Eddy	ND
-38029	Emmons	ND
-38031	Foster	ND
-38033	Golden Valley	ND
-38035	Grand Forks	ND
-38037	Grant	ND
-38039	Griggs	ND
-38041	Hettinger	ND
-38043	Kidder	ND
-38045	La Moure	ND
-38047	Logan	ND
-38049	McHenry	ND
-38051	McIntosh	ND
-38053	McKenzie	ND
-38055	McLean	ND
-38057	Mercer	ND
-38059	Morton	ND
-38061	Mountrail	ND
-38063	Nelson	ND
-38065	Oliver	ND
-38067	Pembina	ND
-38069	Pierce	ND
-38071	Ramsey	ND
-38073	Ransom	ND
-38075	Renville	ND
-38077	Richland	ND
-38079	Rolette	ND
-38081	Sargent	ND
-38083	Sheridan	ND
-38085	Sioux	ND
-38087	Slope	ND
-38089	Stark	ND
-38091	Steele	ND
-38093	Stutsman	ND
-38095	Towner	ND
-38097	Traill	ND
-38099	Walsh	ND
-38101	Ward	ND
-38103	Wells	ND
-38105	Williams	ND
-39001	Adams	OH
-39003	Allen	OH
-39005	Ashland	OH
-39007	Ashtabula	OH
-39009	Athens	OH
-39011	Auglaize	OH
-39013	Belmont	OH
-39015	Brown	OH
-39017	Butler	OH
-39019	Carroll	OH
-39021	Champaign	OH
-39023	Clark	OH
-39025	Clermont	OH
-39027	Clinton	OH
-39029	Columbiana	OH
-39031	Coshocton	OH
-39033	Crawford	OH
-39035	Cuyahoga	OH
-39037	Darke	OH
-39039	Defiance	OH
-39041	Delaware	OH
-39043	Erie	OH
-39045	Fairfield	OH
-39047	Fayette	OH
-39049	Franklin	OH
-39051	Fulton	OH
-39053	Gallia	OH
-39055	Geauga	OH
-39057	Greene	OH
-39059	Guernsey	OH
-39061	Hamilton	OH
-39063	Hancock	OH
-39065	Hardin	OH
-39067	Harrison	OH
-39069	Henry	OH
-39071	Highland	OH
-39073	Hocking	OH
-39075	Holmes	OH
-39077	Huron	OH
-39079	Jackson	OH
-39081	Jefferson	OH
-39083	Knox	OH
-39085	Lake	OH
-39087	Lawrence	OH
-39089	Licking	OH
-39091	Logan	OH
-39093	Lorain	OH
-39095	Lucas	OH
-39097	Madison	OH
-39099	Mahoning	OH
-39101	Marion	OH
-39103	Medina	OH
-39105	Meigs	OH
-39107	Mercer	OH
-39109	Miami	OH
-39111	Monroe	OH
-39113	Montgomery	OH
-39115	Morgan	OH
-39117	Morrow	OH
-39119	Muskingum	OH
-39121	Noble	OH
-39123	Ottawa	OH
-39125	Paulding	OH
-39127	Perry	OH
-39129	Pickaway	OH
-39131	Pike	OH
-39133	Portage	OH
-39135	Preble	OH
-39137	Putnam	OH
-39139	Richland	OH
-39141	Ross	OH
-39143	Sandusky	OH
-39145	Scioto	OH
-39147	Seneca	OH
-39149	Shelby	OH
-39151	Stark	OH
-39153	Summit	OH
-39155	Trumbull	OH
-39157	Tuscarawas	OH
-39159	Union	OH
-39161	Van Wert	OH
-39163	Vinton	OH
-39165	Warren	OH
-39167	Washington	OH
-39169	Wayne	OH
-39171	Williams	OH
-39173	Wood	OH
-39175	Wyandot	OH
-40001	Adair	OK
-40003	Alfalfa	OK
-40005	Atoka	OK
-40007	Beaver	OK
-40009	Beckham	OK
-40011	Blaine	OK
-40013	Bryan	OK
-40015	Caddo	OK
-40017	Canadian	OK
-40019	Carter	OK
-40021	Cherokee	OK
-40023	Choctaw	OK
-40025	Cimarron	OK
-40027	Cleveland	OK
-40029	Coal	OK
-40031	Comanche	OK
-40033	Cotton	OK
-40035	Craig	OK
-40037	Creek	OK
-40039	Custer	OK
-40041	Delaware	OK
-40043	Dewey	OK
-40045	Ellis	OK
-40047	Garfield	OK
-40049	Garvin	OK
-40051	Grady	OK
-40053	Grant	OK
-40055	Greer	OK
-40057	Harmon	OK
-40059	Harper	OK
-40061	Haskell	OK
-40063	Hughes	OK
-40065	Jackson	OK
-40067	Jefferson	OK
-40069	Johnston	OK
-40071	Kay	OK
-40073	Kingfisher	OK
-40075	Kiowa	OK
-40077	Latimer	OK
-40079	Le Flore	OK
-40081	Lincoln	OK
-40083	Logan	OK
-40085	Love	OK
-40087	McClain	OK
-40089	McCurtain	OK
-40091	McIntosh	OK
-40093	Major	OK
-40095	Marshall	OK
-40097	Mayes	OK
-40099	Murray	OK
-40101	Muskogee	OK
-40103	Noble	OK
-40105	Nowata	OK
-40107	Okfuskee	OK
-40109	Oklahoma	OK
-40111	Okmulgee	OK
-40113	Osage	OK
-40115	Ottawa	OK
-40117	Pawnee	OK
-40119	Payne	OK
-40121	Pittsburg	OK
-40123	Pontotoc	OK
-40125	Pottawatomie	OK
-40127	Pushmataha	OK
-40129	Roger Mills	OK
-40131	Rogers	OK
-40133	Seminole	OK
-40135	Sequoyah	OK
-40137	Stephens	OK
-40139	Texas	OK
-40141	Tillman	OK
-40143	Tulsa	OK
-40145	Wagoner	OK
-40147	Washington	OK
-40149	Washita	OK
-40151	Woods	OK
-40153	Woodward	OK
+
+
+
+
+
+
+
+
+
+26001	Alcona	
+26003	Alger	
+26005	Allegan	
+26007	Alpena	
+26009	Antrim	
+26011	Arenac	
+26013	Baraga	
+26015	Barry	
+26017	Bay	
+26019	Benzie	
+26021	Berrien	
+26023	Branch	
+26025	Calhoun	
+26027	Cass	
+26029	Charlevoix	
+26031	Cheboygan	
+26033	Chippewa	
+26035	Clare	
+26037	Clinton	
+26039	Crawford	
+26041	Delta	
+26043	Dickinson	
+26045	Eaton	
+26047	Emmet	
+26049	Genesee	
+26051	Gladwin	
+26053	Gogebic	
+26055	Grand Traverse	
+26057	Gratiot	
+26059	Hillsdale	
+26061	Houghton	
+26063	Huron	
+26065	Ingham	
+26067	Ionia	
+26069	Iosco	
+26071	Iron	
+26073	Isabella	
+26075	Jackson	
+26077	Kalamazoo	
+26079	Kalkaska	
+26081	Kent	
+26083	Keweenaw	
+26085	Lake	
+26087	Lapeer	
+26089	Leelanau	
+26091	Lenawee	
+26093	Livingston	
+26095	Luce	
+26097	Mackinac	
+26099	Macomb	
+26101	Manistee	
+26103	Marquette	
+26105	Mason	
+26107	Mecosta	
+26109	Menominee	
+26111	Midland	
+26113	Missaukee	
+26115	Monroe	
+26117	Montcalm	
+26119	Montmorency	
+26121	Muskegon	
+26123	Newaygo	
+26125	Oakland	
+26127	Oceana	
+26129	Ogemaw	
+26131	Ontonagon	
+26133	Osceola	
+26135	Oscoda	
+26137	Otsego	
+26139	Ottawa	
+26141	Presque Isle	
+26143	Roscommon	
+26145	Saginaw	
+26147	St Clair	
+26149	St Joseph	
+26151	Sanilac	
+26153	Schoolcraft	
+26155	Shiawassee	
+26157	Tuscola	
+26159	Van Buren	
+26161	Washtenaw	
+26163	Wayne	
+26165	Wexford	
+27001	Aitkin	
+27003	Anoka	
+27005	Becker	
+27007	Beltrami	
+27009	Benton	
+27011	Big Stone	
+27013	Blue Earth	
+27015	Brown	
+27017	Carlton	
+27019	Carver	
+27021	Cass	
+27023	Chippewa	
+27025	Chisago	
+27027	Clay	
+27029	Clearwater	
+27031	Cook	
+27033	Cottonwood	
+27035	Crow Wing	
+27037	Dakota	
+27039	Dodge	
+27041	Douglas	
+27043	Faribault	
+27045	Fillmore	
+27047	Freeborn	
+27049	Goodhue	
+27051	Grant	
+27053	Hennepin	
+27055	Houston	
+27057	Hubbard	
+27059	Isanti	
+27061	Itasca	
+27063	Jackson	
+27065	Kanabec	
+27067	Kandiyohi	
+27069	Kittson	
+27071	Koochiching	
+27073	Lac qui Parle	
+27075	Lake	
+27077	Lake of the Woods	
+27079	Le Sueur	
+27081	Lincoln	
+27083	Lyon	
+27085	McLeod	
+27087	Mahnomen	
+27089	Marshall	
+27091	Martin	
+27093	Meeker	
+27095	Mille Lacs	
+27097	Morrison	
+27099	Mower	
+27101	Murray	
+27103	Nicollet	
+27105	Nobles	
+27107	Norman	
+27109	Olmsted	
+27111	Otter Tail	
+27113	Pennington	
+27115	Pine	
+27117	Pipestone	
+27119	Polk	
+27121	Pope	
+27123	Ramsey	
+27125	Red Lake	
+27127	Redwood	
+27129	Renville	
+27131	Rice	
+27133	Rock	
+27135	Roseau	
+27137	St Louis	
+27139	Scott	
+27141	Sherburne	
+27143	Sibley	
+27145	Stearns	
+27147	Steele	
+27149	Stevens	
+27151	Swift	
+27153	Todd	
+27155	Traverse	
+27157	Wabasha	
+27159	Wadena	
+27161	Waseca	
+27163	Washington	
+27165	Watonwan	
+27167	Wilkin	
+27169	Winona	
+27171	Wright	
+27173	Yellow Medicine	
+28001	Adams	
+28003	Alcorn	
+28005	Amite	
+28007	Attala	
+28009	Benton	
+28011	Bolivar	
+28013	Calhoun	
+28015	Carroll	
+28017	Chickasaw	
+28019	Choctaw	
+28021	Claiborne	
+28023	Clarke	
+28025	Clay	
+28027	Coahoma	
+28029	Copiah	
+28031	Covington	
+28033	De Soto	
+28035	Forrest	
+28037	Franklin	
+28039	George	
+28041	Greene	
+28043	Grenada	
+28045	Hancock	
+28047	Harrison	
+28049	Hinds	
+28051	Holmes	
+28053	Humphreys	
+28055	Issaquena	
+28057	Itawamba	
+28059	Jackson	
+28061	Jasper	
+28063	Jefferson	
+28065	Jefferson Davis	
+28067	Jones	
+28069	Kemper	
+28071	Lafayette	
+28073	Lamar	
+28075	Lauderdale	
+28077	Lawrence	
+28079	Leake	
+28081	Lee	
+28083	Leflore	
+28085	Lincoln	
+28087	Lowndes	
+28089	Madison	
+28091	Marion	
+28093	Marshall	
+28095	Monroe	
+28097	Montgomery	
+28099	Neshoba	
+28101	Newton	
+28103	Noxubee	
+28105	Oktibbeha	
+28107	Panola	
+28109	Pearl River	
+28111	Perry	
+28113	Pike	
+28115	Pontotoc	
+28117	Prentiss	
+28119	Quitman	
+28121	Rankin	
+28123	Scott	
+28125	Sharkey	
+28127	Simpson	
+28129	Smith	
+28131	Stone	
+28133	Sunflower	
+28135	Tallahatchie	
+28137	Tate	
+28139	Tippah	
+28141	Tishomingo	
+28143	Tunica	
+28145	Union	
+28147	Walthall	
+28149	Warren	
+28151	Washington	
+28153	Wayne	
+28155	Webster	
+28157	Wilkinson	
+28159	Winston	
+28161	Yalobusha	
+28163	Yazoo	
+29001	Adair	
+29003	Andrew	
+29005	Atchison	
+29007	Audrain	
+29009	Barry	
+29011	Barton	
+29013	Bates	
+29015	Benton	
+29017	Bollinger	
+29019	Boone	
+29021	Buchanan	
+29023	Butler	
+29025	Caldwell	
+29027	Callaway	
+29029	Camden	
+29031	Cape Girardeau	
+29033	Carroll	
+29035	Carter	
+29037	Cass	
+29039	Cedar	
+29041	Chariton	
+29043	Christian	
+29045	Clark	
+29047	Clay	
+29049	Clinton	
+29051	Cole	
+29053	Cooper	
+29055	Crawford	
+29057	Dade	
+29059	Dallas	
+29061	Daviess	
+29063	De Kalb	
+29065	Dent	
+29067	Douglas	
+29069	Dunklin	
+29071	Franklin	
+29073	Gasconade	
+29075	Gentry	
+29077	Greene	
+29079	Grundy	
+29081	Harrison	
+29083	Henry	
+29085	Hickory	
+29087	Holt	
+29089	Howard	
+29091	Howell	
+29093	Iron	
+29095	Jackson	
+29097	Jasper	
+29099	Jefferson	
+29101	Johnson	
+29103	Knox	
+29105	Laclede	
+29107	Lafayette	
+29109	Lawrence	
+29111	Lewis	
+29113	Lincoln	
+29115	Linn	
+29117	Livingston	
+29119	McDonald	
+29121	Macon	
+29123	Madison	
+29125	Maries	
+29127	Marion	
+29129	Mercer	
+29131	Miller	
+29133	Mississippi	
+29135	Moniteau	
+29137	Monroe	
+29139	Montgomery	
+29141	Morgan	
+29143	New Madrid	
+29145	Newton	
+29147	Nodaway	
+29149	Oregon	
+29151	Osage	
+29153	Ozark	
+29155	Pemiscot	
+29157	Perry	
+29159	Pettis	
+29161	Phelps	
+29163	Pike	
+29165	Platte	
+29167	Polk	
+29169	Pulaski	
+29171	Putnam	
+29173	Ralls	
+29175	Randolph	
+29177	Ray	
+29179	Reynolds	
+29181	Ripley	
+29183	St Charles	
+29185	St Clair	
+29186	Ste. Genevieve	
+29187	St Francois	
+29189	St Louis	
+29195	Saline	
+29197	Schuyler	
+29199	Scotland	
+29201	Scott	
+29203	Shannon	
+29205	Shelby	
+29207	Stoddard	
+29209	Stone	
+29211	Sullivan	
+29213	Taney	
+29215	Texas	
+29217	Vernon	
+29219	Warren	
+29221	Washington	
+29223	Wayne	
+29225	Webster	
+29227	Worth	
+29229	Wright	
+29510	St Louis City	
+30001	Beaverhead	
+30003	Big Horn	
+30005	Blaine	
+30007	Broadwater	
+30009	Carbon	
+30011	Carter	
+30013	Cascade	
+30015	Chouteau	
+30017	Custer	
+30019	Daniels	
+30021	Dawson	
+30023	Deer Lodge	
+30025	Fallon	
+30027	Fergus	
+30029	Flathead	
+30031	Gallatin	
+30033	Garfield	
+30035	Glacier	
+30037	Golden Valley	
+30039	Granite	
+30041	Hill	
+30043	Jefferson	
+30045	Judith Basin	
+30047	Lake	
+30049	Lewis and Clark	
+30051	Liberty	
+30053	Lincoln	
+30055	McCone	
+30057	Madison	
+30059	Meagher	
+30061	Mineral	
+30063	Missoula	
+30065	Musselshell	
+30067	Park	
+30069	Petroleum	
+30071	Phillips	
+30073	Pondera	
+30075	Powder River	
+30077	Powell	
+30079	Prairie	
+30081	Ravalli	
+30083	Richland	
+30085	Roosevelt	
+30087	Rosebud	
+30089	Sanders	
+30091	Sheridan	
+30093	Silver Bow	
+30095	Stillwater	
+30097	Sweet Grass	
+30099	Teton	
+30101	Toole	
+30103	Treasure	
+30105	Valley	
+30107	Wheatland	
+30109	Wibaux	
+30111	Yellowstone	
+30113	Yellowstone Nat ParMT
+31001	Adams	
+31003	Antelope	
+31005	Arthur	
+31007	Banner	
+31009	Blaine	
+31011	Boone	
+31013	Box Butte	
+31015	Boyd	
+31017	Brown	
+31019	Buffalo	
+31021	Burt	
+31023	Butler	
+31025	Cass	
+31027	Cedar	
+31029	Chase	
+31031	Cherry	
+31033	Cheyenne	
+31035	Clay	
+31037	Colfax	
+31039	Cuming	
+31041	Custer	
+31043	Dakota	
+31045	Dawes	
+31047	Dawson	
+31049	Deuel	
+31051	Dixon	
+31053	Dodge	
+31055	Douglas	
+31057	Dundy	
+31059	Fillmore	
+31061	Franklin	
+31063	Frontier	
+31065	Furnas	
+31067	Gage	
+31069	Garden	
+31071	Garfield	
+31073	Gosper	
+31075	Grant	
+31077	Greeley	
+31079	Hall	
+31081	Hamilton	
+31083	Harlan	
+31085	Hayes	
+31087	Hitchcock	
+31089	Holt	
+31091	Hooker	
+31093	Howard	
+31095	Jefferson	
+31097	Johnson	
+31099	Kearney	
+31101	Keith	
+31103	Keya Paha	
+31105	Kimball	
+31107	Knox	
+31109	Lancaster	
+31111	Lincoln	
+31113	Logan	
+31115	Loup	
+31117	McPherson	
+31119	Madison	
+31121	Merrick	
+31123	Morrill	
+31125	Nance	
+31127	Nemaha	
+31129	Nuckolls	
+31131	Otoe	
+31133	Pawnee	
+31135	Perkins	
+31137	Phelps	
+31139	Pierce	
+31141	Platte	
+31143	Polk	
+31145	Red Willow	
+31147	Richardson	
+31149	Rock	
+31151	Saline	
+31153	Sarpy	
+31155	Saunders	
+31157	Scotts Bluff	
+31159	Seward	
+31161	Sheridan	
+31163	Sherman	
+31165	Sioux	
+31167	Stanton	
+31169	Thayer	
+31171	Thomas	
+31173	Thurston	
+31175	Valley	
+31177	Washington	
+31179	Wayne	
+31181	Webster	
+31183	Wheeler	
+31185	York	
+32001	Churchill	
+32003	Clark	
+32005	Douglas	
+32007	Elko	
+32009	Esmeralda	
+32011	Eureka	
+32013	Humboldt	
+32015	Lander	
+32017	Lincoln	
+32019	Lyon	
+32021	Mineral	
+32023	Nye	
+32027	Pershing	
+32029	Storey	
+32031	Washoe	
+32033	White Pine	
+32510	Carson City	
+33001	Belknap	
+33003	Carroll	
+33005	Cheshire	
+33007	Coos	
+33009	Grafton	
+33011	Hillsborough	
+33013	Merrimack	
+33015	Rockingham	
+33017	Strafford	
+33019	Sullivan	
+34001	Atlantic	
+34003	Bergen	
+34005	Burlington	
+34007	Camden	
+34009	Cape May	
+34011	Cumberland	
+34013	Essex	
+34015	Gloucester	
+34017	Hudson	
+34019	Hunterdon	
+34021	Mercer	
+34023	Middlesex	
+34025	Monmouth	
+34027	Morris	
+34029	Ocean	
+34031	Passaic	
+34033	Salem	
+34035	Somerset	
+34037	Sussex	
+34039	Union	
+34041	Warren	
+35001	Bernalillo	
+35003	Catron	
+35005	Chaves	
+35006	Cibola	
+35007	Colfax	
+35009	Curry	
+35011	De Baca	
+35013	Dona Ana	
+35015	Eddy	
+35017	Grant	
+35019	Guadalupe	
+35021	Harding	
+35023	Hidalgo	
+35025	Lea	
+35027	Lincoln	
+35028	Los Alamos	
+35029	Luna	
+35031	McKinley	
+35033	Mora	
+35035	Otero	
+35037	Quay	
+35039	Rio Arriba	
+35041	Roosevelt	
+35043	Sandoval	
+35045	San Juan	
+35047	San Miguel	
+35049	Santa Fe	
+35051	Sierra	
+35053	Socorro	
+35055	Taos	
+35057	Torrance	
+35059	Union	
+35061	Valencia	
+36001	Albany	
+36003	Allegany	
+36005	Bronx	
+36007	Broome	
+36009	Cattaraugus	
+36011	Cayuga	
+36013	Chautauqua	
+36015	Chemung	
+36017	Chenango	
+36019	Clinton	
+36021	Columbia	
+36023	Cortland	
+36025	Delaware	
+36027	Dutchess	
+36029	Erie	
+36031	Essex	
+36033	Franklin	
+36035	Fulton	
+36037	Genesee	
+36039	Greene	
+36041	Hamilton	
+36043	Herkimer	
+36045	Jefferson	
+36047	Kings	
+36049	Lewis	
+36051	Livingston	
+36053	Madison	
+36055	Monroe	
+36057	Montgomery	
+36059	Nassau	
+36061	New York	
+36063	Niagara	
+36065	Oneida	
+36067	Onondaga	
+36069	Ontario	
+36071	Orange	
+36073	Orleans	
+36075	Oswego	
+36077	Otsego	
+36079	Putnam	
+36081	Queens	
+36083	Rensselaer	
+36085	Richmond	
+36087	Rockland	
+36089	St Lawrence	
+36091	Saratoga	
+36093	Schenectady	
+36095	Schoharie	
+36097	Schuyler	
+36099	Seneca	
+36101	Steuben	
+36103	Suffolk	
+36105	Sullivan	
+36107	Tioga	
+36109	Tompkins	
+36111	Ulster	
+36113	Warren	
+36115	Washington	
+36117	Wayne	
+36119	Westchester	
+36121	Wyoming	
+36123	Yates	
+37001	Alamance	
+37003	Alexander	
+37005	Alleghany	
+37007	Anson	
+37009	Ashe	
+37011	Avery	
+37013	Beaufort	
+37015	Bertie	
+37017	Bladen	
+37019	Brunswick	
+37021	Buncombe	
+37023	Burke	
+37025	Cabarrus	
+37027	Caldwell	
+37029	Camden	
+37031	Carteret	
+37033	Caswell	
+37035	Catawba	
+37037	Chatham	
+37039	Cherokee	
+37041	Chowan	
+37043	Clay	
+37045	Cleveland	
+37047	Columbus	
+37049	Craven	
+37051	Cumberland	
+37053	Currituck	
+37055	Dare	
+37057	Davidson	
+37059	Davie	
+37061	Duplin	
+37063	Durham	
+37065	Edgecombe	
+37067	Forsyth	
+37069	Franklin	
+37071	Gaston	
+37073	Gates	
+37075	Graham	
+37077	Granville	
+37079	Greene	
+37081	Guilford	
+37083	Halifax	
+37085	Harnett	
+37087	Haywood	
+37089	Henderson	
+37091	Hertford	
+37093	Hoke	
+37095	Hyde	
+37097	Iredell	
+37099	Jackson	
+37101	Johnston	
+37103	Jones	
+37105	Lee	
+37107	Lenoir	
+37109	Lincoln	
+37111	McDowell	
+37113	Macon	
+37115	Madison	
+37117	Martin	
+37119	Mecklenburg	
+37121	Mitchell	
+37123	Montgomery	
+37125	Moore	
+37127	Nash	
+37129	New Hanover	
+37131	Northampton	
+37133	Onslow	
+37135	Orange	
+37137	Pamlico	
+37139	Pasquotank	
+37141	Pender	
+37143	Perquimans	
+37145	Person	
+37147	Pitt	
+37149	Polk	
+37151	Randolph	
+37153	Richmond	
+37155	Robeson	
+37157	Rockingham	
+37159	Rowan	
+37161	Rutherford	
+37163	Sampson	
+37165	Scotland	
+37167	Stanly	
+37169	Stokes	
+37171	Surry	
+37173	Swain	
+37175	Transylvania	
+37177	Tyrrell	
+37179	Union	
+37181	Vance	
+37183	Wake	
+37185	Warren	
+37187	Washington	
+37189	Watauga	
+37191	Wayne	
+37193	Wilkes	
+37195	Wilson	
+37197	Yadkin	
+37199	Yancey	
+38001	Adams	
+38003	Barnes	
+38005	Benson	
+38007	Billings	
+38009	Bottineau	
+38011	Bowman	
+38013	Burke	
+38015	Burleigh	
+38017	Cass	
+38019	Cavalier	
+38021	Dickey	
+38023	Divide	
+38025	Dunn	
+38027	Eddy	
+38029	Emmons	
+38031	Foster	
+38033	Golden Valley	
+38035	Grand Forks	
+38037	Grant	
+38039	Griggs	
+38041	Hettinger	
+38043	Kidder	
+38045	La Moure	
+38047	Logan	
+38049	McHenry	
+38051	McIntosh	
+38053	McKenzie	
+38055	McLean	
+38057	Mercer	
+38059	Morton	
+38061	Mountrail	
+38063	Nelson	
+38065	Oliver	
+38067	Pembina	
+38069	Pierce	
+38071	Ramsey	
+38073	Ransom	
+38075	Renville	
+38077	Richland	
+38079	Rolette	
+38081	Sargent	
+38083	Sheridan	
+38085	Sioux	
+38087	Slope	
+38089	Stark	
+38091	Steele	
+38093	Stutsman	
+38095	Towner	
+38097	Traill	
+38099	Walsh	
+38101	Ward	
+38103	Wells	
+38105	Williams	
+39001	Adams	
+39003	Allen	
+39005	Ashland	
+39007	Ashtabula	
+39009	Athens	
+39011	Auglaize	
+39013	Belmont	
+39015	Brown	
+39017	Butler	
+39019	Carroll	
+39021	Champaign	
+39023	Clark	
+39025	Clermont	
+39027	Clinton	
+39029	Columbiana	
+39031	Coshocton	
+39033	Crawford	
+39035	Cuyahoga	
+39037	Darke	
+39039	Defiance	
+39041	Delaware	
+39043	Erie	
+39045	Fairfield	
+39047	Fayette	
+39049	Franklin	
+39051	Fulton	
+39053	Gallia	
+39055	Geauga	
+39057	Greene	
+39059	Guernsey	
+39061	Hamilton	
+39063	Hancock	
+39065	Hardin	
+39067	Harrison	
+39069	Henry	
+39071	Highland	
+39073	Hocking	
+39075	Holmes	
+39077	Huron	
+39079	Jackson	
+39081	Jefferson	
+39083	Knox	
+39085	Lake	
+39087	Lawrence	
+39089	Licking	
+39091	Logan	
+39093	Lorain	
+39095	Lucas	
+39097	Madison	
+39099	Mahoning	
+39101	Marion	
+39103	Medina	
+39105	Meigs	
+39107	Mercer	
+39109	Miami	
+39111	Monroe	
+39113	Montgomery	
+39115	Morgan	
+39117	Morrow	
+39119	Muskingum	
+39121	Noble	
+39123	Ottawa	
+39125	Paulding	
+39127	Perry	
+39129	Pickaway	
+39131	Pike	
+39133	Portage	
+39135	Preble	
+39137	Putnam	
+39139	Richland	
+39141	Ross	
+39143	Sandusky	
+39145	Scioto	
+39147	Seneca	
+39149	Shelby	
+39151	Stark	
+39153	Summit	
+39155	Trumbull	
+39157	Tuscarawas	
+39159	Union	
+39161	Van Wert	
+39163	Vinton	
+39165	Warren	
+39167	Washington	
+39169	Wayne	
+39171	Williams	
+39173	Wood	
+39175	Wyandot	
+40001	Adair	
+40003	Alfalfa	
+40005	Atoka	
+40007	Beaver	
+40009	Beckham	
+40011	Blaine	
+40013	Bryan	
+40015	Caddo	
+40017	Canadian	
+40019	Carter	
+40021	Cherokee	
+40023	Choctaw	
+40025	Cimarron	
+40027	Cleveland	
+40029	Coal	
+40031	Comanche	
+40033	Cotton	
+40035	Craig	
+40037	Creek	
+40039	Custer	
+40041	Delaware	
+40043	Dewey	
+40045	Ellis	
+40047	Garfield	
+40049	Garvin	
+40051	Grady	
+40053	Grant	
+40055	Greer	
+40057	Harmon	
+40059	Harper	
+40061	Haskell	
+40063	Hughes	
+40065	Jackson	
+40067	Jefferson	
+40069	Johnston	
+40071	Kay	
+40073	Kingfisher	
+40075	Kiowa	
+40077	Latimer	
+40079	Le Flore	
+40081	Lincoln	
+40083	Logan	
+40085	Love	
+40087	McClain	
+40089	McCurtain	
+40091	McIntosh	
+40093	Major	
+40095	Marshall	
+40097	Mayes	
+40099	Murray	
+40101	Muskogee	
+40103	Noble	
+40105	Nowata	
+40107	Okfuskee	
+40109	Oklahoma	
+40111	Okmulgee	
+40113	Osage	
+40115	Ottawa	
+40117	Pawnee	
+40119	Payne	
+40121	Pittsburg	
+40123	Pontotoc	
+40125	Pottawatomie	
+40127	Pushmataha	
+40129	Roger Mills	
+40131	Rogers	
+40133	Seminole	
+40135	Sequoyah	
+40137	Stephens	
+40139	Texas	
+40141	Tillman	
+40143	Tulsa	
+40145	Wagoner	
+40147	Washington	
+40149	Washita	
+40151	Woods	
+40153	Woodward	
 41001	Baker	OR
 41003	Benton	OR
 41005	Clackamas	OR
