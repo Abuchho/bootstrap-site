@@ -3581,8 +3581,10 @@ function toggler2(){
     }
 }; 
 
-var selectedOption
-var inputOption
+var selectedOption;
+var selectedOption2;
+var inputOption;
+var inputOption2;
 window.onload = function() {
     let option 
     const stateKeys = Object.keys(stateNames);
@@ -3600,7 +3602,7 @@ window.onload = function() {
         selectedOption = event.target.value;
         inputOption = stateNames[selectedOption].fips;
         console.log(inputOption)
-        console.log(statePop)
+        console.log(selectedOption)
 
         let countyKeys = Object.keys(stateNames[selectedOption].counties)
         sub.addEventListener('click', function(e){
@@ -3610,8 +3612,13 @@ window.onload = function() {
                 option.text = countyKeys[i];
                 option.value = countyKeys[i];
                 sub.add(option);
-                console.log(countyKeys)
             }
+            sub.addEventListener('change', function(ev){
+                selectedOption2 = ev.target.value;
+                inputOption2 = stateNames[selectedOption].counties[selectedOption2];
+                console.log(inputOption2)
+                console.log(selectedOption2);
+            })
         })
         sub.selectedIndex = 0;
         
