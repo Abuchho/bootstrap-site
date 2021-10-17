@@ -3604,6 +3604,7 @@ window.onload = function() {
 
         let countyKeys = Object.keys(stateNames[selectedOption].counties)
         sub.addEventListener('click', function(e){
+            sub.length = 1;
             for (let i = 0; i < countyKeys.length; i++) {
                 option = document.createElement('option');
                 option.text = countyKeys[i];
@@ -3612,6 +3613,8 @@ window.onload = function() {
                 console.log(countyKeys)
             }
         })
+        sub.selectedIndex = 0;
+        
     });
 
     document.getElementById('submitBtn').addEventListener('click', fetchData)
