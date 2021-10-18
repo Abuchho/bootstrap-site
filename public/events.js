@@ -3586,6 +3586,7 @@ var selectedOption2;
 var inputOption;
 var inputOption2;
 window.onload = function() {
+
     let option 
     const stateKeys = Object.keys(stateNames);
     for (let i = 0; i < stateKeys.length; i++) {
@@ -3603,7 +3604,7 @@ window.onload = function() {
         inputOption = stateNames[selectedOption].fips;
         console.log(inputOption)
         console.log(selectedOption)
-
+        
         let countyKeys = Object.keys(stateNames[selectedOption].counties)
         sub.addEventListener('click', function(e){
             sub.length = 1;
@@ -3618,45 +3619,48 @@ window.onload = function() {
                 inputOption2 = stateNames[selectedOption].counties[selectedOption2];
                 console.log(inputOption2)
                 console.log(selectedOption2);
+                
+                //State Population
+                let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
+                //County Population
+                let countyPop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:${inputOption2}&in=state:${inputOption}`
+                //State Poverty
+                let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:01&time=2019'
+                //County Poverty
+                let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:033&in=state:01&time=2019'
+                //State Unemployment
+                let stateUnemp = 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUST010000000000003'
+                //County Unemployment
+                let countyUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST010000000000003'
+
+                // Calling all of the API
+                var getStatePopulation = axios.get(statePop);
+                var getCountyPopulation = axios.get(countyPop);
+                var getStatePoverty = axios.get(statePov);
+                var getCountyPoverty = axios.get(countyPov);
+                var getStateUnemployment = axios.get(stateUnemp);
+                var getCountyUnemployment = axios.get(countyUnemp);
+
+                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
+                    .then(function (response) {
+                        const resultsStatePop = response[0].data;
+                        const resultsCountyPop = response[1].data;
+                        const resultsStatePov = response[2].data;
+                        const resultsCountyPov = response[3].data;
+                        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov)
+                        })
+                    };
+                    console.log(statePop);
+                    console.log(countyPop)
+                    document.getElementById('submitBtn').addEventListener('click', fetchData)
+
             })
         })
         sub.selectedIndex = 0;
-        
     });
-
-    document.getElementById('submitBtn').addEventListener('click', fetchData)
 };
 
-    //State Population
-let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:01`
-    //County Population
-let countyPop = 'https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:033&in=state:01'
-    //State Poverty
-let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:01&time=2019'
-    //County Poverty
-let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:033&in=state:01&time=2019'
-    //State Unemployment
-let stateUnemp = 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUST010000000000003'
-    //County Unemployment
-let countyUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST010000000000003'
 
-// Calling all of the API
-var getStatePopulation = axios.get(statePop);
-var getCountyPopulation = axios.get(countyPop);
-var getStatePoverty = axios.get(statePov);
-var getCountyPoverty = axios.get(countyPov);
-var getStateUnemployment = axios.get(stateUnemp);
-var getCountyUnemployment = axios.get(countyUnemp);
-
-async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
-    .then(function (response) {
-        const resultsStatePop = response[0].data;
-        const resultsCountyPop = response[1].data;
-        const resultsStatePov = response[2].data;
-        const resultsCountyPov = response[3].data;
-        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov)
-    })
-};
 
  // Function to show the output
 function showOutput(res1, res2, res3, res4) { 
@@ -3671,11 +3675,11 @@ function showOutput(res1, res2, res3, res4) {
     document.getElementById('results').innerHTML =
         
     `<p>${disad}</p>`
-        console.log(disad);
-        console.log(population);
-        console.log(poverty);
-        console.log(popNew)
-        console.log(povUn)
+        // console.log(disad);
+        // console.log(population);
+        // console.log(poverty);
+        // console.log(popNew)
+        // console.log(povUn)
     }
 	
 
