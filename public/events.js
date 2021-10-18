@@ -3596,8 +3596,8 @@ window.onload = function() {
         main.add(option);
     }
 
-    stateRadioBtn.addEventListener('click', toggler);
-    countyRadioBtn.addEventListener('click', toggler2);
+    // stateRadioBtn.addEventListener('click', toggler);
+    // countyRadioBtn.addEventListener('click', toggler2);
 
     main.addEventListener('change', function(event){
         selectedOption = event.target.value;
@@ -3625,9 +3625,9 @@ window.onload = function() {
                 //County Population
                 let countyPop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:${inputOption2}&in=state:${inputOption}`
                 //State Poverty
-                let statePov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:01&time=2019'
+                let statePov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:${inputOption}&time=2019`
                 //County Poverty
-                let countyPov = 'https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVALL_PT,GEOID,NAME&for=county:033&in=state:01&time=2019'
+                let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
                 //State Unemployment
                 let stateUnemp = 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUST010000000000003'
                 //County Unemployment
@@ -3641,7 +3641,7 @@ window.onload = function() {
                 var getStateUnemployment = axios.get(stateUnemp);
                 var getCountyUnemployment = axios.get(countyUnemp);
 
-                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
+                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty])
                     .then(function (response) {
                         const resultsStatePop = response[0].data;
                         const resultsCountyPop = response[1].data;
@@ -3651,35 +3651,34 @@ window.onload = function() {
                         })
                     };
                     console.log(statePop);
-                    console.log(countyPop)
+                    console.log(countyPop);
+                    console.log(countyPov)
                     document.getElementById('submitBtn').addEventListener('click', fetchData)
 
+
+                    // Function to show the output
+                    function showOutput(res1, res2, res3, res4) { 
+                        let population = (res1[1][1]);
+                        let rateNew = stateNames.Alabama.rateOfNew;
+                        let poverty = parseFloat(res3[1][0]);
+                        let unemployment =  3.1
+                        let popNew = population * rateNew;
+                        let povUn = poverty + unemployment;
+                        let disad = popNew*povUn*.001;
+                        
+                        document.getElementById('results').innerHTML =
+                            
+                        `<p>The State Population of ${selectedOption} is : ${population}</p>`
+                            // console.log(disad);
+                            console.log(population);
+                            console.log(res2);
+                            console.log(res3)
+                            console.log(res4)
+                        }
             })
         })
         sub.selectedIndex = 0;
     });
 };
 
-
-
- // Function to show the output
-function showOutput(res1, res2, res3, res4) { 
-    let population = (res1[1][1]);
-    let rateNew = stateNames.Alabama.rateOfNew;
-    let poverty = parseFloat(res3[1][0]);
-    let unemployment =  3.1
-    let popNew = population * rateNew;
-    let povUn = poverty + unemployment;
-    let disad = popNew*povUn*.001;
-    
-    document.getElementById('results').innerHTML =
-        
-    `<p>${disad}</p>`
-        // console.log(disad);
-        // console.log(population);
-        // console.log(poverty);
-        // console.log(popNew)
-        // console.log(povUn)
-    }
-	
 
