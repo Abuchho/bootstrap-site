@@ -3647,8 +3647,8 @@ window.onload = function() {
                         const resultsCountyPop = response[1].data;
                         const resultsStatePov = response[2].data;
                         const resultsCountyPov = response[3].data;
-                        const resultsStateUnemp = response[4].data;
-                        const resultsCountyUnemp = response[5].data;
+                        const resultsStateUnemp = response[4].data.Results.series[0].data[0].value;
+                        const resultsCountyUnemp = response[5].data.Results.series[0].data[0].value;
                         showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
                         })
                     };
@@ -3673,9 +3673,9 @@ window.onload = function() {
                         `<p>The State Population of ${selectedOption} is : ${population}</p>`
                             // console.log(disad);
                             console.log(population);
-                            console.log(res2);
-                            console.log(res3);
-                            console.log(res4);
+                            console.log(res2[1][1]);
+                            console.log(res3[1][0]);
+                            console.log(res4[1][0]);
                             console.log(res5);
                             console.log(res6);
                         }
