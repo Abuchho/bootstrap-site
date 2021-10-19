@@ -3629,11 +3629,11 @@ window.onload = function() {
                 //County Poverty
                 let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
                 //State Unemployment
-                let stateUnemp = 'https://api.bls.gov/publicAPI/v1/timeseries/data/LAUST010000000000003'
+                let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?CMC_PRO_API_KEY=6b97b31bc8be43c0a2f66b6c88c662a6`
                 //County Unemployment
-                let countyUnemp = 'https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST010000000000003'
+                let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?CMC_PRO_API_KEY=6b97b31bc8be43c0a2f66b6c88c662a6`
 
-                // Calling all of the API
+                // Calling all of the APIs
                 var getStatePopulation = axios.get(statePop);
                 var getCountyPopulation = axios.get(countyPop);
                 var getStatePoverty = axios.get(statePov);
@@ -3641,23 +3641,25 @@ window.onload = function() {
                 var getStateUnemployment = axios.get(stateUnemp);
                 var getCountyUnemployment = axios.get(countyUnemp);
 
-                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty])
+                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
                     .then(function (response) {
                         const resultsStatePop = response[0].data;
                         const resultsCountyPop = response[1].data;
                         const resultsStatePov = response[2].data;
                         const resultsCountyPov = response[3].data;
-                        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov)
+                        const resultsStateUnemp = response[4].data;
+                        const resultsCountyUnemp = response[5].data;
+                        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
                         })
                     };
                     console.log(statePop);
-                    console.log(countyPop);
-                    console.log(countyPov)
+                    console.log(countyUnemp);
+                    console.log(stateUnemp)
                     document.getElementById('submitBtn').addEventListener('click', fetchData)
 
 
                     // Function to show the output
-                    function showOutput(res1, res2, res3, res4) { 
+                    function showOutput(res1, res2, res3, res4, res5, res6) { 
                         let population = (res1[1][1]);
                         let rateNew = stateNames.Alabama.rateOfNew;
                         let poverty = parseFloat(res3[1][0]);
@@ -3672,8 +3674,10 @@ window.onload = function() {
                             // console.log(disad);
                             console.log(population);
                             console.log(res2);
-                            console.log(res3)
-                            console.log(res4)
+                            console.log(res3);
+                            console.log(res4);
+                            console.log(res5);
+                            console.log(res6);
                         }
             })
         })
