@@ -3629,9 +3629,9 @@ window.onload = function() {
                 //County Poverty
                 let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
                 //State Unemployment
-                let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?CMC_PRO_API_KEY=6b97b31bc8be43c0a2f66b6c88c662a6`
+                let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
                 //County Unemployment
-                let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?CMC_PRO_API_KEY=6b97b31bc8be43c0a2f66b6c88c662a6`
+                let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
 
                 // Calling all of the APIs
                 var getStatePopulation = axios.get(statePop);
@@ -3640,7 +3640,7 @@ window.onload = function() {
                 var getCountyPoverty = axios.get(countyPov);
                 var getStateUnemployment = axios.get(stateUnemp);
                 var getCountyUnemployment = axios.get(countyUnemp);
-
+                    
                     async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
                     .then(function (response) {
                         const resultsStatePop = response[0].data;
