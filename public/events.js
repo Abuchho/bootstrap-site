@@ -3649,35 +3649,47 @@ window.onload = function() {
                         const resultsCountyPov = response[3].data;
                         const resultsStateUnemp = response[4].data.Results.series[0].data[0].value;
                         const resultsCountyUnemp = response[5].data.Results.series[0].data[0].value;
+
                         showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
-                        })
+                        });
                     };
                     console.log(statePop);
                     console.log(countyUnemp);
                     console.log(stateUnemp)
                     document.getElementById('submitBtn').addEventListener('click', fetchData)
 
-
+                    
                     // Function to show the output
                     function showOutput(res1, res2, res3, res4, res5, res6) { 
-                        let population = (res1[1][1]);
-                        let rateNew = stateNames.Alabama.rateOfNew;
-                        let poverty = parseFloat(res3[1][0]);
-                        let unemployment =  3.1
-                        let popNew = population * rateNew;
-                        let povUn = poverty + unemployment;
-                        let disad = popNew*povUn*.001;
+                        let populationState = parseFloat(res1[1][1]);
+                        let populationCounty = parseFloat(res2[1][1]);
+                        let povertyState = parseFloat(res3[1][0]); 
+                        let povertyCounty = parseFloat(res4[1][0]);
+                        let unemploymentState = parseFloat(res5);
+                        let unemploymentCounty = parseFloat(res6);
                         
-                        document.getElementById('results').innerHTML =
+                        
+                        function disadvantagedState(){ return .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))};
+                        
+                        function survivingBusinessState(){ return disadvantagedState() * stateNames[selectedOption].survival };
+                        
+
+                        
+                        
+                        // let disad = popNew*povUn*.001;
+                        
+                        // document.getElementById('results').innerHTML =
                             
-                        `<p>The State Population of ${selectedOption} is : ${population}</p>`
-                            // console.log(disad);
-                            console.log(population);
+                        // `<p> has  disadvantaged entrepreneurs</p>`
+                        // `<p>There are approxamately  businesses surviving their 1st year in </p>`;
+                            
+                            console.log(res5);
                             console.log(res2[1][1]);
                             console.log(res3[1][0]);
                             console.log(res4[1][0]);
                             console.log(res5);
                             console.log(res6);
+                            console.log (survivingBusinessState())
                         }
             })
         })
