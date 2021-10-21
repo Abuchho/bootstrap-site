@@ -3667,29 +3667,36 @@ window.onload = function() {
                         let povertyCounty = parseFloat(res4[1][0]);
                         let unemploymentState = parseFloat(res5);
                         let unemploymentCounty = parseFloat(res6);
+
+                        var results = document.getElementById('results');
+                            
+                        results.innerHTML=`<p>${selectedOption} has ${disadvantagedState()} disadvantaged entrepreneurs</p>`;
                         
                         
                         function disadvantagedState(){ return .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))};
                         
-                        function survivingBusinessState(){ return disadvantagedState() * stateNames[selectedOption].survival };
-                        
+                        function survivingBusinessState(){ return .001 * (disadvantagedState() * stateNames[selectedOption].survival) };
 
+                        var jobsAwaitingCreationState =
+                            survivingBusinessState() * stateNames[selectedOption].creation;
+
+                        var impactState = 25000 * jobsAwaitingCreationState;
+
+                        var investmentState = 6000 * 
+                        disadvantagedState();
                         
-                        
-                        // let disad = popNew*povUn*.001;
-                        
-                        // document.getElementById('results').innerHTML =
                             
-                        // `<p> has  disadvantaged entrepreneurs</p>`
-                        // `<p>There are approxamately  businesses surviving their 1st year in </p>`;
-                            
-                            console.log(res5);
+                            console.log(populationState);
                             console.log(res2[1][1]);
                             console.log(res3[1][0]);
                             console.log(res4[1][0]);
                             console.log(res5);
                             console.log(res6);
-                            console.log (survivingBusinessState())
+                            console.log (disadvantagedState());
+                            console.log (survivingBusinessState());
+                            console.log (jobsAwaitingCreationState);
+                            console.log(impactState);
+                            console.log(investmentState);
                         }
             })
         })
