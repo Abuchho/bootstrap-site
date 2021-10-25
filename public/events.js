@@ -3668,30 +3668,59 @@ window.onload = function() {
                         let unemploymentState = parseFloat(res5);
                         let unemploymentCounty = parseFloat(res6);
 
-                        var results = document.getElementById('results');
-                            
-                        results.innerHTML=`<p>${selectedOption} has ${disadvantagedState()} disadvantaged entrepreneurs</p>`;
-                        
-                        
-                        function disadvantagedState(){ return .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))};
-                        
-                        function survivingBusinessState(){ return .001 * (disadvantagedState() * stateNames[selectedOption].survival) };
-
                         var jobsAwaitingCreationState =
                             survivingBusinessState() * stateNames[selectedOption].creation;
+                        var jobsAwaitingCreationCounty =
+                            survivingBusinessCounty() * stateNames[selectedOption].creation;
 
                         var impactState = 25000 * jobsAwaitingCreationState;
+                        var investmentState = 6000 * disadvantagedState();
+                        var impactCounty = 25000 * jobsAwaitingCreationCounty;
+                        var investmentCounty = 6000 * disadvantagedCounty();
 
-                        var investmentState = 6000 * 
-                        disadvantagedState();
+                        //Display Results  
+                        document.getElementById('results1').innerHTML=
+                        `${disadvantagedState().toFixed(2)}`;
+                        document.getElementById('results2').innerHTML=
+                        `${survivingBusinessState().toFixed(2)}`;
+                        document.getElementById('results3').innerHTML=
+                        `${jobsAwaitingCreationState.toFixed(2)}`;
+                        document.getElementById('results7').innerHTML=
+                        `$ ${impactState.toFixed(2)}`;
+                        document.getElementById('results9').innerHTML=
+                        `$ ${investmentState.toFixed(2)}`;
+
+                        document.getElementById('results4').innerHTML=
+                        `${disadvantagedCounty().toFixed(2)}`;
+                        document.getElementById('results5').innerHTML=
+                        `${survivingBusinessCounty().toFixed(2)}`;
+                        document.getElementById('results6').innerHTML=
+                        `${jobsAwaitingCreationCounty.toFixed(2)}`;
+                        document.getElementById('results8').innerHTML=
+                        `$ ${impactCounty.toFixed(2)}`;
+                        document.getElementById('results10').innerHTML=
+                        `$ ${investmentCounty.toFixed(2)}`;
+                        
+                        
+                        function disadvantagedState(){ return  .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))
+                        };
+                        function disadvantagedCounty(){ return  .0001 *(populationCounty * stateNames[selectedOption].rateOfNew * (povertyCounty + unemploymentCounty))
+                        };
+                        
+                        function survivingBusinessState(){ return .01 * (disadvantagedState() * stateNames[selectedOption].survival) };
+                        function survivingBusinessCounty(){ return .01 * (disadvantagedCounty() * stateNames[selectedOption].survival) };
+
+                        
+
+                        
                         
                             
                             console.log(populationState);
-                            console.log(res2[1][1]);
-                            console.log(res3[1][0]);
-                            console.log(res4[1][0]);
-                            console.log(res5);
-                            console.log(res6);
+                            console.log(populationCounty);
+                            console.log(povertyState);
+                            console.log(povertyCounty);
+                            console.log(unemploymentState);
+                            console.log(unemploymentCounty);
                             console.log (disadvantagedState());
                             console.log (survivingBusinessState());
                             console.log (jobsAwaitingCreationState);
