@@ -3652,7 +3652,7 @@ window.onload = function() {
 
                         showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
                         });
-                    };
+                    }
                     console.log(statePop);
                     console.log(countyUnemp);
                     console.log(stateUnemp)
