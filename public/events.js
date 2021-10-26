@@ -3678,28 +3678,29 @@ window.onload = function() {
                         var impactCounty = 25000 * jobsAwaitingCreationCounty;
                         var investmentCounty = 6000 * disadvantagedCounty();
 
+                        const intFormat = new Intl.NumberFormat('en-US')
                         //Display Results  
                         document.getElementById('results1').innerHTML=
-                        `${disadvantagedState().toFixed(2)}`;
+                        `${intFormat.format(disadvantagedState().toFixed(2))}`;
                         document.getElementById('results2').innerHTML=
-                        `${survivingBusinessState().toFixed(2)}`;
+                        `${intFormat.format(survivingBusinessState().toFixed(2))}`;
                         document.getElementById('results3').innerHTML=
-                        `${jobsAwaitingCreationState.toFixed(2)}`;
+                        `${intFormat.format(jobsAwaitingCreationState.toFixed(2))}`;
                         document.getElementById('results7').innerHTML=
-                        `$ ${impactState.toFixed(2)}`;
+                        `$ ${intFormat.format(impactState.toFixed(2))}`;
                         document.getElementById('results9').innerHTML=
-                        `$ ${investmentState.toFixed(2)}`;
+                        `$ ${intFormat.format(investmentState.toFixed(2))}`;
 
                         document.getElementById('results4').innerHTML=
-                        `${disadvantagedCounty().toFixed(2)}`;
+                        `${intFormat.format(disadvantagedCounty().toFixed(2))}`;
                         document.getElementById('results5').innerHTML=
-                        `${survivingBusinessCounty().toFixed(2)}`;
+                        `${intFormat.format(survivingBusinessCounty().toFixed(2))}`;
                         document.getElementById('results6').innerHTML=
-                        `${jobsAwaitingCreationCounty.toFixed(2)}`;
+                        `${intFormat.format(jobsAwaitingCreationCounty.toFixed(2))}`;
                         document.getElementById('results8').innerHTML=
-                        `$ ${impactCounty.toFixed(2)}`;
+                        `$ ${intFormat.format(impactCounty.toFixed(2))}`;
                         document.getElementById('results10').innerHTML=
-                        `$ ${investmentCounty.toFixed(2)}`;
+                        `$ ${intFormat.format(investmentCounty.toFixed(2))}`;
                         
                         
                         function disadvantagedState(){ return  .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))

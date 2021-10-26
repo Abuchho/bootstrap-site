@@ -8,14 +8,14 @@
     <!-- <link rel="stylesheet" href="/public/index.css"> -->
     <script defer src="/events.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Calculator</title>
+    <title>Opportunity Calculator</title>
 </head>
 <body>
   <div class="containert-fluid">
     <div class="container-fluid">
-      <h1 class="text-center p-3 text-primary">Calculator</h1>
+      <h1 class="text-center p-3 text-primary">Expenditure Gap and Opportunity Calculator</h1>
     </div>
-    <form class="w-75 border border-white rounded p-3 mx-auto shadow" onsubmit="return false">
+    <form class="bg-light w-75 border border-white rounded p-3 mx-auto shadow-lg" onsubmit="return false">
       <!-- <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stateRadio" value="State">
         <label class="form-check-label" for="stateRadio">State</label>
@@ -27,7 +27,7 @@
     
       <div class="form-group">
         <label for="stateDropDown">State</label>
-        <select class="w-50 form-control" id="stateDropDown">
+        <select class="w-25 form-control" id="stateDropDown">
         </select>
       </div>
       <div id="countyDiv" class="form-group">
@@ -42,8 +42,8 @@
         <div class="mt-2 w-75">
           <h5>Number of Disadvantaged Entrepreneurs
           </h5>
-          <p>State: <span class="badge bg-warning text-dark" id="results1"></span></p>
-          <p>County: <span class="badge bg-secondary" id="results4"></span></p>
+          <p class="text-muted">State: <span class="badge bg-warning text-dark" id="results1"></span></p>
+          <p class="text-muted">County: <span class="badge bg-secondary" id="results4"></span></p>
 
           <h5>Number of Businesses Surviving 1st Year </h5>
           <p>State: <span class="badge bg-warning text-dark" id="results2"></span></p>
