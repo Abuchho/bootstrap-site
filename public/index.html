@@ -10,12 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Opportunity Calculator</title>
 </head>
-<body>
+<body" >
   <div class="containert-fluid">
     <div class="container-fluid">
-      <h1 class="text-center p-3 text-primary">Expenditure Gap and Opportunity Calculator</h1>
+      <h1 class="text-center p-3 text-dark fw-bold">Expenditure Gap and Opportunity Calculator</h1>
     </div>
-    <form class="bg-light w-75 border border-white rounded p-3 mx-auto shadow-lg" onsubmit="return false">
+    <form class="bg-light w-7100 border border-white rounded p-3 mx-auto shadow" onsubmit="return false">
       <!-- <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="stateRadio" value="State">
         <label class="form-check-label" for="stateRadio">State</label>
@@ -24,45 +24,90 @@
         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="countyRadio" value="County">
         <label class="form-check-label" for="countyRadio">County</label>
       </div> -->
-    
-      <div class="form-group">
-        <label for="stateDropDown">State</label>
-        <select class="w-25 form-control" id="stateDropDown">
+    <div class="row">
+      <div class="col-sm form-group">
+        <label class="text-muted" for="stateDropDown">State</label>
+        <select class="w-75 form-control" id="stateDropDown">
         </select>
       </div>
-      <div id="countyDiv" class="form-group">
-        <label for="countyDropDown">County</label>
-        <select class="w-50 form-control" id="countyDropDown">
+      <div id="countyDiv" class="col-sm form-group">
+        <label class="text-muted" for="countyDropDown">County</label>
+        <select class="w-75 form-control" id="countyDropDown">
         </select>
-        <button id="submitBtn" type="submit" class="mt-3 btn btn-primary">Submit</button>
       </div>
-      
-      <div id="results" class= "p-3">
+      <div class="col"><button id="submitBtn" type="submit" class="col mt-4  btn btn-warning shadow-lg">Submit</button>
+      </div>
+    </div> 
+      <!-- <div id="results" class= "p-3">
         
-        <div class="mt-2 w-75">
-          <h5>Number of Disadvantaged Entrepreneurs
+        <div class="mt-3 w-100">
+          <h5 class="text-center">Number of Disadvantaged Entrepreneurs
           </h5>
           <p class="text-muted">State: <span class="badge bg-warning text-dark" id="results1"></span></p>
           <p class="text-muted">County: <span class="badge bg-secondary" id="results4"></span></p>
 
-          <h5>Number of Businesses Surviving 1st Year </h5>
+          <h5 class="text-center">Number of Businesses Surviving 1st Year </h5>
           <p>State: <span class="badge bg-warning text-dark" id="results2"></span></p>
           <p>County: <span class="badge bg-secondary" id="results5"></span></p>
 
-          <h5>Jobs Awaiting Creation </h5>
+          <h5 class="text-center">Jobs Awaiting Creation </h5>
           <p>State: <span class="badge bg-warning text-dark" id="results3"></span></p>
           <p>County: <span class="badge bg-secondary" id="results6"></span></p>
 
-          <h5>Estimated Economic Impact Potential</h5>
+          <h5 class="text-center">Estimated Economic Impact Potential</h5>
           <p>State: <span class="badge bg-warning text-dark" id="results7"></span></p>
           <p>County: <span class="badge bg-secondary" id="results8"></span></p>
 
-          <h5>Estimated Investment Needed to Support Entrepreneurs</h5>
+          <h5 class="text-center">Estimated Investment Needed to Support Entrepreneurs</h5>
           <p>State: <span class="badge bg-warning text-dark" id="results9"></span></p>
           <p>County: <span class="badge bg-secondary" id="results10"></span></p>
         </div>
         
-      </div>
+      </div> -->
+
+      <table class="mt-5 table table-warning table-striped">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th id="resultsState" scope="col"></th>
+            <th id="resultsCounty" scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="3" scope="row">Number of Disadvantaged Entrepreneurs</th>
+            <td id="results1"></td>
+            <td id="results4"></td>
+          
+          </tr>
+          <tr>
+            <th colspan="3" scope="row">Number of Businesses Surviving 1st Year</th>
+            <td id="results2"></td>
+            <td id="results5"></td>
+            
+          </tr>
+          <tr>
+            <th colspan="3" scope="row">Jobs Awaiting Creation</th>
+            <td id="results3"></td>
+            <td id="results6"></td>
+            
+          </tr>
+          <tr>
+            <th colspan="3" scope="row">Estimated Economic Impact Potential</th>
+            <td id="results7"></td>
+            <td id="results8"></td>
+            
+          </tr>
+          <tr>
+            <th colspan="3" scope="row">Estimated Investment Needed to Support Entrepreneurs</th>
+            <td id="results9"></td>
+            <td id="results10"></td>
+            
+          </tr>
+        </tbody>
+      </table>
     </form>
   </div>
 

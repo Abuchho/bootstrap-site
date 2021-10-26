@@ -3701,6 +3701,8 @@ window.onload = function() {
                         `$ ${intFormat.format(impactCounty.toFixed(2))}`;
                         document.getElementById('results10').innerHTML=
                         `$ ${intFormat.format(investmentCounty.toFixed(2))}`;
+                        document.getElementById('resultsState').innerHTML=`${selectedOption}`;
+                        document.getElementById('resultsCounty').innerHTML=`${selectedOption2}`;
                         
                         
                         function disadvantagedState(){ return  .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))
