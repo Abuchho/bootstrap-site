@@ -3621,7 +3621,7 @@ window.onload = function() {
                 console.log(selectedOption2);
                 
                 //State Population
-                let statePop = `http://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
+                let statePop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
                 //County Population
                 let countyPop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:${inputOption2}&in=state:${inputOption}`
                 //State Poverty
