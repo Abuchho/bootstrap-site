@@ -3585,155 +3585,152 @@ var selectedOption;
 var selectedOption2;
 var inputOption;
 var inputOption2;
-window.onload = function() {
 
-    let option 
-    const stateKeys = Object.keys(stateNames);
-    for (let i = 0; i < stateKeys.length; i++) {
-        option = document.createElement('option');
-        option.text = stateKeys[i];
-        option.value = stateKeys[i];
-        main.add(option);
-    }
 
-    // stateRadioBtn.addEventListener('click', toggler);
-    // countyRadioBtn.addEventListener('click', toggler2);
+let option 
+const stateKeys = Object.keys(stateNames);
+for (let i = 0; i < stateKeys.length; i++) {
+	option = document.createElement('option');
+	option.text = stateKeys[i];
+	option.value = stateKeys[i];
+	main.add(option);
+}
 
-    main.addEventListener('change', function(event){
-        selectedOption = event.target.value;
-        inputOption = stateNames[selectedOption].fips;
-        console.log(inputOption)
-        console.log(selectedOption)
-        
-        let countyKeys = Object.keys(stateNames[selectedOption].counties)
-        sub.addEventListener('blur', function(e){
-            sub.length = 1;
-            for (let i = 0; i < countyKeys.length; i++) {
-                option = document.createElement('option');
-                option.text = countyKeys[i];
-                option.value = countyKeys[i];
-                sub.add(option);
-            }
-            sub.addEventListener('change', function(ev){
-                selectedOption2 = ev.target.value;
-                inputOption2 = stateNames[selectedOption].counties[selectedOption2];
-                console.log(inputOption2)
-                console.log(selectedOption2);
-                
-                //State Population
-                let statePop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
-                //County Population
-                let countyPop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:${inputOption2}&in=state:${inputOption}`
-                //State Poverty
-                let statePov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:${inputOption}&time=2019`
-                //County Poverty
-                let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
-                //State Unemployment
-                let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
-                //County Unemployment
-                let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
+main.addEventListener('change', function(event){
+	selectedOption = event.target.value;
+	inputOption = stateNames[selectedOption].fips;
+	console.log(inputOption);
+	console.log(selectedOption);
+});
 
-                // Calling all of the APIs
-                var getStatePopulation = axios.get(statePop);
-                var getCountyPopulation = axios.get(countyPop);
-                var getStatePoverty = axios.get(statePov);
-                var getCountyPoverty = axios.get(countyPov);
-                var getStateUnemployment = axios.get(stateUnemp);
-                var getCountyUnemployment = axios.get(countyUnemp);
-                    
-                    async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
-                    .then(function (response) {
-                        const resultsStatePop = response[0].data;
-                        const resultsCountyPop = response[1].data;
-                        const resultsStatePov = response[2].data;
-                        const resultsCountyPov = response[3].data;
-                        const resultsStateUnemp = response[4].data.Results.series[0].data[0].value;
-                        const resultsCountyUnemp = response[5].data.Results.series[0].data[0].value;
+sub.addEventListener('click', function(e){
+	console.log('clicking the sub');
+	let countyKeys = Object.keys(stateNames[selectedOption].counties)
+	sub.length = 1;
+	for (let i = 0; i < countyKeys.length; i++) {
+		option = document.createElement('option');
+		option.text = countyKeys[i];
+		option.value = countyKeys[i];
+		sub.add(option);
+	}
+});
 
-                        showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
-                        });
-                    }
-                    console.log(statePop);
-                    console.log(countyUnemp);
-                    console.log(stateUnemp)
-                    document.getElementById('submitBtn').addEventListener('click', fetchData)
+sub.addEventListener('change', function(ev){
+	selectedOption2 = ev.target.value;
+	inputOption2 = stateNames[selectedOption].counties[selectedOption2];
+	console.log(inputOption2)
+	console.log(selectedOption2);
+	
+	//State Population
+	let statePop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=state:${inputOption}`
+	//County Population
+	let countyPop = `https://api.census.gov/data/2019/pep/population?get=NAME,POP&for=county:${inputOption2}&in=state:${inputOption}`
+	//State Poverty
+	let statePov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,NAME&for=state:${inputOption}&time=2019`
+	//County Poverty
+	let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
+	//State Unemployment
+	let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
+	//County Unemployment
+	let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
 
-                    
-                    // Function to show the output
-                    function showOutput(res1, res2, res3, res4, res5, res6) { 
-                        let populationState = parseFloat(res1[1][1]);
-                        let populationCounty = parseFloat(res2[1][1]);
-                        let povertyState = parseFloat(res3[1][0]); 
-                        let povertyCounty = parseFloat(res4[1][0]);
-                        let unemploymentState = parseFloat(res5);
-                        let unemploymentCounty = parseFloat(res6);
+	// Calling all of the APIs
+	var getStatePopulation = axios.get(statePop);
+	var getCountyPopulation = axios.get(countyPop);
+	var getStatePoverty = axios.get(statePov);
+	var getCountyPoverty = axios.get(countyPov);
+	var getStateUnemployment = axios.get(stateUnemp);
+	var getCountyUnemployment = axios.get(countyUnemp);
+	
+	async function fetchData() {await axios.all([getStatePopulation, getCountyPopulation, getStatePoverty, getCountyPoverty, getStateUnemployment, getCountyUnemployment])
+	.then(function (response) {
+		const resultsStatePop = response[0].data;
+		const resultsCountyPop = response[1].data;
+		const resultsStatePov = response[2].data;
+		const resultsCountyPov = response[3].data;
+		const resultsStateUnemp = response[4].data.Results.series[0].data[0].value;
+		const resultsCountyUnemp = response[5].data.Results.series[0].data[0].value;
 
-                        var jobsAwaitingCreationState =
-                            survivingBusinessState() * stateNames[selectedOption].creation;
-                        var jobsAwaitingCreationCounty =
-                            survivingBusinessCounty() * stateNames[selectedOption].creation;
+		showOutput(resultsStatePop, resultsCountyPop, resultsStatePov, resultsCountyPov, resultsStateUnemp, resultsCountyUnemp)
+		});
+	}
+	console.log(statePop);
+	console.log(countyUnemp);
+	console.log(stateUnemp)
+	document.getElementById('submitBtn').addEventListener('click', fetchData)
 
-                        var impactState = 25000 * jobsAwaitingCreationState;
-                        var investmentState = 6000 * disadvantagedState();
-                        var impactCounty = 25000 * jobsAwaitingCreationCounty;
-                        var investmentCounty = 6000 * disadvantagedCounty();
+});
+    //     })
+    //     sub.selectedIndex = 0;
+    // });
 
-                        const intFormat = new Intl.NumberFormat('en-US')
-                        //Display Results  
-                        document.getElementById('results1').innerHTML=
-                        `${intFormat.format(disadvantagedState().toFixed(2))}`;
-                        document.getElementById('results2').innerHTML=
-                        `${intFormat.format(survivingBusinessState().toFixed(2))}`;
-                        document.getElementById('results3').innerHTML=
-                        `${intFormat.format(jobsAwaitingCreationState.toFixed(2))}`;
-                        document.getElementById('results7').innerHTML=
-                        `$ ${intFormat.format(impactState.toFixed(2))}`;
-                        document.getElementById('results9').innerHTML=
-                        `$ ${intFormat.format(investmentState.toFixed(2))}`;
-
-                        document.getElementById('results4').innerHTML=
-                        `${intFormat.format(disadvantagedCounty().toFixed(2))}`;
-                        document.getElementById('results5').innerHTML=
-                        `${intFormat.format(survivingBusinessCounty().toFixed(2))}`;
-                        document.getElementById('results6').innerHTML=
-                        `${intFormat.format(jobsAwaitingCreationCounty.toFixed(2))}`;
-                        document.getElementById('results8').innerHTML=
-                        `$ ${intFormat.format(impactCounty.toFixed(2))}`;
-                        document.getElementById('results10').innerHTML=
-                        `$ ${intFormat.format(investmentCounty.toFixed(2))}`;
-                        document.getElementById('resultsState').innerHTML=`${selectedOption}`;
-                        document.getElementById('resultsCounty').innerHTML=`${selectedOption2}`;
-                        
-                        
-                        function disadvantagedState(){ return  .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState))
-                        };
-                        function disadvantagedCounty(){ return  .0001 *(populationCounty * stateNames[selectedOption].rateOfNew * (povertyCounty + unemploymentCounty))
-                        };
-                        
-                        function survivingBusinessState(){ return .01 * (disadvantagedState() * stateNames[selectedOption].survival) };
-                        function survivingBusinessCounty(){ return .01 * (disadvantagedCounty() * stateNames[selectedOption].survival) };
-
-                        
-
-                        
-                        
-                            
-                            console.log(populationState);
-                            console.log(populationCounty);
-                            console.log(povertyState);
-                            console.log(povertyCounty);
-                            console.log(unemploymentState);
-                            console.log(unemploymentCounty);
-                            console.log (disadvantagedState());
-                            console.log (survivingBusinessState());
-                            console.log (jobsAwaitingCreationState);
-                            console.log(impactState);
-                            console.log(investmentState);
-                        }
-            })
-        })
-        sub.selectedIndex = 0;
-    });
+function disadvantagedState(populationState, povertyState, unemploymentState){ 
+	return  .0001 *(populationState * stateNames[selectedOption].rateOfNew * (povertyState + unemploymentState));
+};
+function disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty){ 
+	return  .0001 *(populationCounty * stateNames[selectedOption].rateOfNew * (povertyCounty + unemploymentCounty));
 };
 
+function survivingBusinessState(populationState, povertyState, unemploymentState){ 
+	return .01 * (disadvantagedState(populationState, povertyState, unemploymentState) * stateNames[selectedOption].survival); 
+};
+function survivingBusinessCounty(populationCounty, povertyCounty, unemploymentCounty){ 
+	return .01 * (disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty) * stateNames[selectedOption].survival);
+};
 
+function showOutput(res1, res2, res3, res4, res5, res6) { 
+	let populationState = parseFloat(res1[1][1]);
+	let populationCounty = parseFloat(res2[1][1]);
+	let povertyState = parseFloat(res3[1][0]); 
+	let povertyCounty = parseFloat(res4[1][0]);
+	let unemploymentState = parseFloat(res5);
+	let unemploymentCounty = parseFloat(res6);
+
+	var jobsAwaitingCreationState =
+		survivingBusinessState(populationState, povertyState, unemploymentState) * stateNames[selectedOption].creation;
+	var jobsAwaitingCreationCounty =
+		survivingBusinessCounty(populationCounty, povertyCounty, unemploymentCounty) * stateNames[selectedOption].creation;
+
+	var impactState = 25000 * jobsAwaitingCreationState;
+	var investmentState = 6000 * disadvantagedState(populationState, povertyState, unemploymentState);
+	var impactCounty = 25000 * jobsAwaitingCreationCounty;
+	var investmentCounty = 6000 * disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty);
+
+	const intFormat = new Intl.NumberFormat('en-US')
+	//Display Results  
+	document.getElementById('results1').innerHTML=
+	`${intFormat.format(disadvantagedState(populationState, povertyState, unemploymentState).toFixed(2))}`;
+	document.getElementById('results2').innerHTML=
+	`${intFormat.format(survivingBusinessState(populationState, povertyState, unemploymentState).toFixed(2))}`;
+	document.getElementById('results3').innerHTML=
+	`${intFormat.format(jobsAwaitingCreationState.toFixed(2))}`;
+	document.getElementById('results7').innerHTML=
+	`$ ${intFormat.format(impactState.toFixed(2))}`;
+	document.getElementById('results9').innerHTML=
+	`$ ${intFormat.format(investmentState.toFixed(2))}`;
+
+	document.getElementById('results4').innerHTML=
+	`${intFormat.format(disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(2))}`;
+	document.getElementById('results5').innerHTML=
+	`${intFormat.format(survivingBusinessCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(2))}`;
+	document.getElementById('results6').innerHTML=
+	`${intFormat.format(jobsAwaitingCreationCounty.toFixed(2))}`;
+	document.getElementById('results8').innerHTML=
+	`$ ${intFormat.format(impactCounty.toFixed(2))}`;
+	document.getElementById('results10').innerHTML=
+	`$ ${intFormat.format(investmentCounty.toFixed(2))}`;
+	document.getElementById('resultsState').innerHTML=`${selectedOption}`;
+	document.getElementById('resultsCounty').innerHTML=`${selectedOption2}`;
+	
+	console.log(populationState);
+	console.log(populationCounty);
+	console.log(povertyState);
+	console.log(povertyCounty);
+	console.log(unemploymentState);
+	console.log(unemploymentCounty);
+	console.log (disadvantagedState());
+	console.log (survivingBusinessState());
+	console.log (jobsAwaitingCreationState);
+	console.log(impactState);
+	console.log(investmentState);
+}
