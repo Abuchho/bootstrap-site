@@ -3568,18 +3568,18 @@ sub.add(defaultOption2);
 sub.selectedIndex = 0;
 
 //Radio button toggle display
-const stateRadioBtn = document.getElementById('stateRadio');
-const countyRadioBtn = document.getElementById('countyRadio');
-function toggler(){
-    if(stateRadioBtn.checked) {
-        document.getElementById('countyDiv').style.display='none';
-    }
-};
-function toggler2(){
-    if(countyRadioBtn.checked) {
-        document.getElementById('countyDiv').style.display='block'
-    }
-}; 
+// const stateRadioBtn = document.getElementById('stateRadio');
+// const countyRadioBtn = document.getElementById('countyRadio');
+// function toggler(){
+//     if(stateRadioBtn.checked) {
+//         document.getElementById('countyDiv').style.display='none';
+//     }
+// };
+// function toggler2(){
+//     if(countyRadioBtn.checked) {
+//         document.getElementById('countyDiv').style.display='block'
+//     }
+// }; 
 
 var selectedOption;
 var selectedOption2;
@@ -3606,7 +3606,7 @@ window.onload = function() {
         console.log(selectedOption)
         
         let countyKeys = Object.keys(stateNames[selectedOption].counties)
-        sub.addEventListener('click', function(e){
+        sub.addEventListener('blur', function(e){
             sub.length = 1;
             for (let i = 0; i < countyKeys.length; i++) {
                 option = document.createElement('option');
