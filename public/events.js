@@ -3603,7 +3603,7 @@ main.addEventListener('change', function(event){
 	console.log(selectedOption);
 });
 
-sub.addEventListener('click', function(e){
+sub.addEventListener('focus', function(e){
 	console.log('clicking the sub');
 	let countyKeys = Object.keys(stateNames[selectedOption].counties)
 	sub.length = 1;
