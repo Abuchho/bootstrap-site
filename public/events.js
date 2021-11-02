@@ -3699,38 +3699,28 @@ function showOutput(res1, res2, res3, res4, res5, res6) {
 	const intFormat = new Intl.NumberFormat('en-US')
 	//Display Results  
 	document.getElementById('results1').innerHTML=
-	`${intFormat.format(disadvantagedState(populationState, povertyState, unemploymentState).toFixed(2))}`;
+	`${intFormat.format(disadvantagedState(populationState, povertyState, unemploymentState).toFixed(0))}`;
 	document.getElementById('results2').innerHTML=
-	`${intFormat.format(survivingBusinessState(populationState, povertyState, unemploymentState).toFixed(2))}`;
+	`${intFormat.format(survivingBusinessState(populationState, povertyState, unemploymentState).toFixed(0))}`;
 	document.getElementById('results3').innerHTML=
-	`${intFormat.format(jobsAwaitingCreationState.toFixed(2))}`;
+	`${intFormat.format(jobsAwaitingCreationState.toFixed(0))}`;
 	document.getElementById('results7').innerHTML=
-	`$ ${intFormat.format(impactState.toFixed(2))}`;
+	`$ ${intFormat.format(impactState.toFixed(0))}`;
 	document.getElementById('results9').innerHTML=
-	`$ ${intFormat.format(investmentState.toFixed(2))}`;
+	`$ ${intFormat.format(investmentState.toFixed(0))}`;
 
 	document.getElementById('results4').innerHTML=
-	`${intFormat.format(disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(2))}`;
+	`${intFormat.format(disadvantagedCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(0))}`;
 	document.getElementById('results5').innerHTML=
-	`${intFormat.format(survivingBusinessCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(2))}`;
+	`${intFormat.format(survivingBusinessCounty(populationCounty, povertyCounty, unemploymentCounty).toFixed(0))}`;
 	document.getElementById('results6').innerHTML=
-	`${intFormat.format(jobsAwaitingCreationCounty.toFixed(2))}`;
+	`${intFormat.format(jobsAwaitingCreationCounty.toFixed(0))}`;
 	document.getElementById('results8').innerHTML=
-	`$ ${intFormat.format(impactCounty.toFixed(2))}`;
+	`$ ${intFormat.format(impactCounty.toFixed(0))}`;
 	document.getElementById('results10').innerHTML=
-	`$ ${intFormat.format(investmentCounty.toFixed(2))}`;
+	`$ ${intFormat.format(investmentCounty.toFixed(0))}`;
 	document.getElementById('resultsState').innerHTML=`${selectedOption}`;
 	document.getElementById('resultsCounty').innerHTML=`${selectedOption2}`;
 	
-	console.log(populationState);
-	console.log(populationCounty);
-	console.log(povertyState);
-	console.log(povertyCounty);
-	console.log(unemploymentState);
-	console.log(unemploymentCounty);
-	console.log (disadvantagedState());
-	console.log (survivingBusinessState());
-	console.log (jobsAwaitingCreationState);
-	console.log(impactState);
-	console.log(investmentState);
+	
 }
