@@ -3630,9 +3630,9 @@ sub.addEventListener('change', function(ev){
 	//County Poverty
 	let countyPov = `https://api.census.gov/data/timeseries/poverty/saipe?get=SAEPOVRTALL_PT,GEOID,NAME&for=county:${inputOption2}&in=state:${inputOption}&time=2019`
 	//State Unemployment
-	let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
+	let stateUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUST${inputOption}0000000000003?registrationkey=19533d4545204a99990779c43204aee9`
 	//County Unemployment
-	let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?registrationkey=6b97b31bc8be43c0a2f66b6c88c662a6`
+	let countyUnemp = `https://api.bls.gov/publicAPI/v2/timeseries/data/LAUCN${inputOption}${inputOption2}0000000003?registrationkey=19533d4545204a99990779c43204aee9`
 
 	// Calling all of the APIs
 	var getStatePopulation = axios.get(statePop);
